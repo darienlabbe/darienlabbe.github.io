@@ -6,10 +6,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'nunito': ['nunito', 'sans-serif']
+        'nunito': ['nunito', 'sans-serif'],
+        'consolas': ['consolas', 'mono'],
+        'randygg' : ['randygg', 'consolas']
       },
     },
   },
   plugins: [],
 }
-
