@@ -9,7 +9,7 @@ function NavBar() {
     };
 
     return (
-        <div className='min-w-full sticky top-0 z-50 bg-white'>
+        <div className='min-w-full sticky top-0 bg-white z-50'>
             <section className='flex flex-col justify-between h-24'>
                 <nav>
                     <div className='drop-shadow-lg shadow-lg w-full px-4 sm:px-6 lg:px-8'>
@@ -44,8 +44,8 @@ function NavBar() {
                             </div>
                         </div>
                     </div>
-                    <div className={nav?'md:hidden ease-in duration-300':'md:hidden ease-in duration-500 opacity-0'} id='mobile-menu'>
-                        <div className='space-y-1 px-2 pb-3 pt-2 sm:px-3 bg-white drop-shadow-lg shadow-lg w-full'>
+                    <div className={nav?'md:hidden ease-in duration-300':'md:hidden ease-in duration-500 opacity-0 -translate-y-[200%]'} id='mobile-menu'>
+                        <div className='px-2 py-1 sm:px-3 bg-white drop-shadow-lg shadow-lg w-full'>
                             <a href='#Projects' onClick={handleNav} className='text-gray-800 hover:bg-gradient-to-r hover:from-emerald-700 hover:to-green-400 hover:opacity-70 hover:text-white focus:bg-gradient-to-r focus:from-emerald-700 focus:to-green-400 focus:text-white block rounded-md px-3 py-2 text-base font-medium' aria-current='page'>Projects</a>
                             <a href='#Skills' onClick={handleNav} className='text-gray-800 hover:bg-gradient-to-r hover:from-emerald-700 hover:to-green-400 hover:opacity-70 hover:text-white focus:bg-gradient-to-r focus:from-emerald-700 focus:to-green-400 focus:text-white block rounded-md px-3 py-2 text-base font-medium'>Skills</a>
                             <a href='#About' onClick={handleNav} className='text-gray-800 hover:bg-gradient-to-r hover:from-emerald-700 hover:to-green-400 hover:opacity-70 hover:text-white focus:bg-gradient-to-r focus:from-emerald-700 focus:to-green-400 focus:text-white block rounded-md px-3 py-2 text-base font-medium'>About</a>
