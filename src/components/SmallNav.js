@@ -21,10 +21,7 @@ function NavBar() {
                                 </div>
                                 <div className='hidden md:block'>
                                     <div className='ml-10 flex items-center space-x-4'>
-                                        <a href='#Projects' className='text-gray-400 hover:bg-gradient-to-r from-emerald-600 to-green-500 hover:text-white hover:duration-200 rounded-md px-3 py-2 text-sm font-medium'>Projects</a>
-                                        <a href='#Skills' className='text-gray-400 hover:bg-gradient-to-r from-emerald-600 to-green-500 hover:text-white hover:duration-200 rounded-md px-3 py-2 text-sm font-medium'>Skills</a>
-                                        <a href='#About' className='text-gray-400 hover:bg-gradient-to-r from-emerald-600 to-green-500 hover:text-white hover:duration-200 rounded-md px-3 py-2 text-sm font-medium'>About</a>
-                                        <a href='#Contact' className='text-gray-400 hover:bg-gradient-to-r from-emerald-600 to-green-500 hover:text-white hover:duration-200 rounded-md px-3 py-2 text-sm font-medium'>Contact</a>
+                                        {/* nav bar items */}
                                         <button className='flex text-2xl text-emerald-900 cursor-pointer hover:scale-110 hover:duration-200'><LuMoonStar/></button>
                                     </div>
                                 </div>
@@ -46,10 +43,7 @@ function NavBar() {
                     </div>
                     <div className={nav?'md:hidden ease-in duration-300':'md:hidden ease-in duration-500 opacity-0'} id='mobile-menu'>
                         <div className='space-y-1 px-2 pb-3 pt-2 sm:px-3 bg-white drop-shadow-lg shadow-lg w-full'>
-                            <a href='#Projects' onClick={handleNav} className='text-gray-800 hover:bg-gradient-to-r hover:from-emerald-700 hover:to-green-400 hover:opacity-70 hover:text-white focus:bg-gradient-to-r focus:from-emerald-700 focus:to-green-400 focus:text-white block rounded-md px-3 py-2 text-base font-medium' aria-current='page'>Projects</a>
-                            <a href='#Skills' onClick={handleNav} className='text-gray-800 hover:bg-gradient-to-r hover:from-emerald-700 hover:to-green-400 hover:opacity-70 hover:text-white focus:bg-gradient-to-r focus:from-emerald-700 focus:to-green-400 focus:text-white block rounded-md px-3 py-2 text-base font-medium'>Skills</a>
-                            <a href='#About' onClick={handleNav} className='text-gray-800 hover:bg-gradient-to-r hover:from-emerald-700 hover:to-green-400 hover:opacity-70 hover:text-white focus:bg-gradient-to-r focus:from-emerald-700 focus:to-green-400 focus:text-white block rounded-md px-3 py-2 text-base font-medium'>About</a>
-                            <a href='#Contact' onClick={handleNav} className='text-gray-800 hover:bg-gradient-to-r hover:from-emerald-700 hover:to-green-400 hover:opacity-70 hover:text-white focus:bg-gradient-to-r focus:from-emerald-700 focus:to-green-400 focus:text-white block rounded-md px-3 py-2 text-base font-medium'>Contact</a>
+                            {/* nav bar items */}
                         </div>
                     </div>
                 </nav>

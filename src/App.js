@@ -1,52 +1,31 @@
-import React, {useEffect, useRef} from 'react';
-import NavBar from './components/NavBar';
+import React from 'react';
 import Home from './components/Home';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import About from './components/About';
-import Contact from './components/Contact';
+import Biosound from './pages/biosound.js';
+import CompVis from './pages/compvis.js';
+import Graphics from './pages/graphics.js';
+import SpamOrHam from './pages/spamorham.js';
+import WordleGuesser from './pages/wordleguesser.js';
+import SocialMedia from './pages/socialmedia.js';
+import Worm from './pages/worm.js';
+import Website from './pages/website.js';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-  const pages = [<Home/>, <Projects/>, <Skills/>, <About/>, <Contact/>];
-  const pageRefs = useRef(pages.map(() => React.createRef()));
-
-  useEffect(() => { 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting) {
-                entry.target.classList.add('opacity-100', 'translate-y-0')
-                entry.target.classList.remove('opacity-0', 'translate-y-8')
-            }
-        });
-    }, {threshold: 0.2});
-
-    pageRefs.current.forEach(ref => {
-        if(ref.current) {
-            observer.observe(ref.current)
-        }
-    });
-
-    return () => {
-        pageRefs.current.forEach(ref => {
-            if(ref.current) {
-                observer.unobserve(ref.current)
-            }
-        });
-    }
-}, [pages]);
-
   return (
     <div className='bg-white font-randygg'>
-      <NavBar/>
-      <div>
-        { 
-          pages.map((page, index) => (
-              <div key={index} ref={pageRefs.current[index]} className='transition-all duration-500 ease-out opacity-0 translate-y-8'>
-                {page}
-              </div>
-          ))
-        }
-      </div>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/biosound' element={<Biosound/>}/>
+          <Route path='/compvis' element={<CompVis/>}/>
+          <Route path='/graphics' element={<Graphics/>}/>
+          <Route path='/spamorham' element={<SpamOrHam/>}/>
+          <Route path='/wordleguesser' element={<WordleGuesser/>}/>
+          <Route path='/socialmedia' element={<SocialMedia/>}/>
+          <Route path='/worm' element={<Worm/>}/>
+          <Route path='/Website' element={<Website/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }
