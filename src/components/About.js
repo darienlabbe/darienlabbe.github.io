@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
     return (
-        <div className='py-10 drop-shadow-md' id='About'>
+        <div id='About' className='py-10 drop-shadow-md'>
             <div className='flex flex-col justify-center items-center pt-16'>
                 <h1 className='text-4xl p-2 max-md:text-2xl font-bold bg-gradient-to-r from-emerald-700 to-green-400 bg-clip-text text-transparent'>About</h1>
             </div>

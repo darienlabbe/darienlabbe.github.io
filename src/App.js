@@ -8,22 +8,22 @@ import WordleGuesser from './pages/wordleguesser.js';
 import SocialMedia from './pages/socialmedia.js';
 import Worm from './pages/worm.js';
 import Website from './pages/website.js';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className='bg-white font-randygg'>
       <Router>
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/biosound' element={<Biosound/>}/>
-          <Route path='/compvis' element={<CompVis/>}/>
-          <Route path='/graphics' element={<Graphics/>}/>
-          <Route path='/spamorham' element={<SpamOrHam/>}/>
-          <Route path='/wordleguesser' element={<WordleGuesser/>}/>
-          <Route path='/socialmedia' element={<SocialMedia/>}/>
-          <Route path='/worm' element={<Worm/>}/>
-          <Route path='/Website' element={<Website/>}/>
+          <Route path='/' element={<Home id='Home'/>}/>
+          <Route path='/biosound' element={<Biosound id='Biosound'/>}/>
+          <Route path='/compvis' element={<CompVis id='CompVis'/>}/>
+          <Route path='/graphics' element={<Graphics id='Graphics'/>}/>
+          <Route path='/spamorham' element={<SpamOrHam id='SpamOrHam'/>}/>
+          <Route path='/wordleguesser' element={<WordleGuesser id='WordleGuesser'/>}/>
+          <Route path='/socialmedia' element={<SocialMedia id='SocialMedia'/>}/>
+          <Route path='/worm' element={<Worm id='Worm'/>}/>
+          <Route path='/Website' element={<Website id='Website'/>}/>
         </Routes>
       </Router>
     </div>
