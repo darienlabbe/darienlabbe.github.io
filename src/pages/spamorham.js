@@ -37,8 +37,12 @@ function SpamOrHam() {
                         <div>
                             <h1 className='text-xl font-bold pb-2'>Project: The Spam Detection Program</h1>
                             <div>
-                                <p>This project is a very rudimentary program that uses binary dictionaries and uses the Bayes theorem to determine the probability of an email being either spam or "ham" (not spam).</p><br/>
-                                <p>The Naïve Bayes Spam Filter equation takes the probability of a spam occurring (P(A)), the probability of spam not occurring (P(B)), the conditional probability of a spam email occurring, given that a specific email is not spam also occurs (P(A/B)), and the conditional probability of event spam not occurring, given that a specific email is spam also occurs (P(B/A)). This forms into the equation: P(A|B) = P(B|A) * P(A) / P(B)</p><br/>
+                                <p>This project is a very rudimentary program that uses binary dictionaries and uses the Bayes theorem to determine the probability of an 
+                                    email being either spam or "ham" (not spam).</p><br/>
+                                <p>The Naïve Bayes Spam Filter equation takes the probability of a spam occurring (P(A)), the probability of spam not occurring (P(B)), the 
+                                    conditional probability of a spam email occurring, given that a specific email is not spam also occurs (P(A/B)), and the conditional 
+                                    probability of event spam not occurring, given that a specific email is spam also occurs (P(B/A)). This forms into the equation: 
+                                    P(A|B) = P(B|A) * P(A) / P(B)</p><br/>
                                 <p>The conditional probability (P(A/B)) is what then determines if the email is considered to be spam or not spam.</p><br/>
                                 <p>If you wish to take a look at the code behind this project, click the photo to be taken to the GitHub repository containing that code.</p>
                             </div>

@@ -37,7 +37,7 @@ function WordleGuesser() {
                         <div>
                             <h1 className='text-xl font-bold pb-2'>Project: Wordle Guessing Program</h1>
                             <div>
-                                <p>This project involves the popular game "Wordle" where the program guesses what the correct wordle guess is. The program works by using a 
+                                <p>This project involves the popular game "Wordle" where the program guesses what the correct Wordle guess is. The program works by using a 
                                     starter word and with each guess it adds to command that searches through a dictionary of all possible words. The guesser then picks out a 
                                     random word from the smaller available list, shortening until finally the right answer is gotten. The program averages at 4-4.5 guesses in 
                                     order to guess correctly.</p><br/>
