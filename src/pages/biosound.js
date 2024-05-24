@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { LuMoonStar } from 'react-icons/lu';
 import { PiBracketsCurlyBold } from 'react-icons/pi';
 
 function Biosound() {
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, []);
+
     return (
         <div>
             <div id='SmallNav' className='min-w-full sticky top-0 z-50 bg-white'>

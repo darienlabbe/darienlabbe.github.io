@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { LuMoonStar, LuMail } from 'react-icons/lu';
 import { PiBracketsCurlyBold } from 'react-icons/pi';
@@ -8,6 +8,10 @@ function Home() {
     const navigate = useNavigate();
     const [nav, setNav] = useState(false);
     const handleNav = () => { setNav(!nav); };
+
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, []);
 
     function handleScroll(id) {
         document.getElementById(id)?.scrollIntoView({

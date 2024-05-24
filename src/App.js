@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Biosound from './pages/Biosound.js';
 import AutoChickFeed from './pages/Autochickfeed.js';
@@ -10,7 +11,6 @@ import WordleGuesser from './pages/Wordleguesser.js';
 import SocialMedia from './pages/Socialmedia.js';
 import Worm from './pages/Worm.js';
 import Website from './pages/Website.js';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
