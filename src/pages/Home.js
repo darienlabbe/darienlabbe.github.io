@@ -62,6 +62,7 @@ function Home() {
                 <div className='max-w-[1000px] m-auto grid grid-cols-3 max-lg:grid-cols-1 gap-2 px-16 grid-auto-rows-auto'>
                     <div className='grid grid-rows-2 gap-2 h-full pt-5 max-lg:flex-col max-lg:flex'>
                         <div className='m-auto p-5 rounded-lg border-gray-500 border-2 border-opacity-10 drop-shadow-lg h-full w-[270px]'>
+                            <img src='programming.png' alt='programming' className='flex m-auto w-32 items-center justify-center'/>
                             <p className='font-semibold'>Programming Languages (Order of Experience):</p>
                             <ul className='list-disc mx-5 h-full'>
                                 <li>C++</li>
@@ -75,6 +76,7 @@ function Home() {
                             </ul>
                         </div>
                         <div className='m-auto p-5 rounded-lg border-gray-500 border-2 border-opacity-10 drop-shadow-lg h-full w-[270px]'>
+                            <img src='programs.png' alt='programs' className='flex m-auto w-32 items-center justify-center'/>
                             <p className='font-semibold'>Programs Used:</p>
                             <ul className='list-disc mx-5 h-full'>
                                 <li>VS Code</li>
@@ -89,10 +91,12 @@ function Home() {
                     </div>
                     <div className='grid grid-rows-2 gap-2 h-full pt-5 max-lg:pt-0 max-lg:flex-col max-lg:flex'>
                         <div className='m-auto p-5 rounded-lg border-gray-500 border-2 border-opacity-10 drop-shadow-lg h-full w-[270px]'>
+                            <img src='projects.png' alt='projects' className='flex m-auto w-32 items-center justify-center'/>
                             <p className='font-semibold'>Projects:</p>
                             <p className='h-full'>I have completed well over 50+ projects, ranging from websites, web apps, Machine Learning, Graphics, and many more.</p>
                         </div>
                         <div className='m-auto p-5 rounded-lg border-gray-500 border-2 border-opacity-10 drop-shadow-lg h-full w-[270px]'>
+                            <img src='skills.png' alt='skills' className='flex m-auto w-28 items-center justify-center'/>
                             <p className='font-semibold'>Other Key Skills:</p>
                             <ul className='list-disc mx-5 h-full'>
                                 <li>Microsoft Visual Studio</li>
@@ -107,10 +111,12 @@ function Home() {
                     </div>
                     <div className='grid grid-rows-2 gap-2 h-full pt-5 max-lg:pt-0 max-lg:flex-col max-lg:flex'>
                         <div className='m-auto p-5 rounded-lg border-gray-500 border-2 border-opacity-10 drop-shadow-lg h-full w-[270px]'>
+                            <img src='jobs.png' alt='jobs' className='flex m-auto w-32 items-center justify-center'/>
                             <p className='font-semibold'>Job Experience:</p>
                             <p className='h-full'>I have worked as a Machine Learning Research and Developer, designing a CNN to detect for sound classifications for ecosystem analysis in South Africa</p>
                         </div>
                         <div className='m-auto p-5 rounded-lg border-gray-500 border-2 border-opacity-10 drop-shadow-lg h-full w-[270px]'>
+                            <img src='awards.png' alt='awards' className='flex m-auto w-32 items-center justify-center'/>
                             <p className='font-semibold'>Awards and Activities:</p>
                             <ul className='list-disc mx-5 h-full'>
                                 <li>Graduated With Distinction</li>
@@ -144,7 +150,7 @@ function Home() {
             </section>
             <section id='Footer' className='w-full mt-24 text-white bg-green-950 h-60 content-center'>
                 <h1 className='flex justify-center items-center text-4xl py-4 font-bold'>Darien Labbe</h1>
-                <p className='flex justify-center items-center text-xl py-4 text-center max-md:text-sm'>Created by Darien Labbe - Updated 05/22/2024</p>
+                <p className='flex justify-center items-center text-xl py-4 text-center max-md:text-sm'>Created by Darien Labbe - Updated 05/24/2024</p>
             </section>
         </div>
     );
