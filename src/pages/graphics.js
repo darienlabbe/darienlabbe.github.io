@@ -43,7 +43,7 @@ function Graphics() {
                 </div>
                 <div className='flex flex-col justify-between items-center max-w-[1300px] m-auto pb-20'> 
                     <div className='grid grid-cols-2 max-md:grid-cols-1 gap-8 px-16 items-center'>
-                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/CS-375/tree/main/Assignment-3'><img src='cube-light.png' className='hover:scale-110 duration-200 cursor-pointer border-gray-500 border-2 border-opacity-10 drop-shadow-lg w-96 h-96 rounded-lg m-auto mb-20' alt='cube'/></a>
+                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/CS-375/tree/main/Assignment-3'><img src='cube-light.png' className='hover:scale-105 duration-200 cursor-pointer border-gray-500 border-2 border-opacity-10 drop-shadow-lg w-96 h-96 rounded-lg m-auto mb-20' alt='cube'/></a>
                         <div className='mb-20'>
                             <h1 className='text-xl font-bold pb-2'>Cube Project:</h1>
                             <div className='text-lg'>
@@ -52,7 +52,7 @@ function Graphics() {
                                 <p>If you wish to take a look at the code behind this project, click the photo to be taken to the GitHub repository containing that code.</p>
                             </div>
                         </div>
-                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/CS-375/tree/main/Solar-System'><img src='solarsystem.jpg' className='hover:scale-110 duration-200 cursor-pointer border-gray-500 border-2 border-opacity-10 drop-shadow-lg rounded-lg max-w-96 m-auto mb-20' alt='solar system'/></a>
+                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/CS-375/tree/main/Solar-System'><img src='solarsystem.jpg' className='hover:scale-105 duration-200 cursor-pointer border-gray-500 border-2 border-opacity-10 drop-shadow-lg rounded-lg max-w-96 m-auto mb-20' alt='solar system'/></a>
                         <div className='mb-20'>
                             <h1 className='text-xl font-bold pb-2'>The Solar System Project:</h1>
                             <div className='text-lg'>
@@ -63,7 +63,7 @@ function Graphics() {
                                 <p>If you wish to take a look at the code behind this project, click the photo to be taken to the GitHub repository containing that code.</p>
                             </div>
                         </div>
-                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/CS-375/tree/main/Final-Project'><img src='ahouse.jpg' className='hover:scale-110 duration-200 cursor-pointer border-gray-500 border-2 border-opacity-10 drop-shadow-lg rounded-lg max-w-96 m-auto mb-20' alt='the house project'/></a>
+                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/CS-375/tree/main/Final-Project'><img src='ahouse.jpg' className='hover:scale-105 duration-200 cursor-pointer border-gray-500 border-2 border-opacity-10 drop-shadow-lg rounded-lg max-w-96 m-auto mb-20' alt='the house project'/></a>
                         <div className='mb-20'>
                             <h1 className='text-xl font-bold pb-2'>A House Project:</h1>
                             <div className='text-lg'>
