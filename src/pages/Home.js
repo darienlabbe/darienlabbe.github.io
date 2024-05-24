@@ -8,9 +8,9 @@ import NavBar from '../components/NavBar';
 function Home() {
     const navigate = useNavigate();
 
-    // useEffect(() => {
-    //     window.scroll(0, 0)
-    // }, []);
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, []);
 
     return (
         <div>
