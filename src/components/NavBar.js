@@ -18,6 +18,23 @@ function NavBar() {
         handleScroll(id);
     }
 
+    function handleThemeSwap() {
+        const selectedTheme = localStorage.getItem('theme');
+
+        if (selectedTheme) {
+            if(selectedTheme === 'dark') {
+                document.body.classList.add('light');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.body.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        } else {
+            document.body.classList.add('light');
+            localStorage.setItem('theme', 'light');
+        }
+    }
+
     return (
         <div id='NavBar' className='min-w-full sticky top-0 bg-background z-50'>
             <div className='flex flex-col justify-between h-24'>
@@ -26,16 +43,16 @@ function NavBar() {
                         <div className='flex h-[90px] items-center justify-center max-md:justify-between'>
                             <div className='flex'>
                                 <div className='flex-shrink-0 flex items-center'>
-                                    <PiBracketsCurlyBold className='h-6 w-6 mr-1'/>
-                                    <button onClick={() => { window.scroll({ top: 0, behavior: 'smooth' }); }} className='text-2xl flex font-bold cursor-pointer'>Darien Labbe</button>
+                                    <PiBracketsCurlyBold className='h-6 w-6 mr-1 text-text-color-dark'/>
+                                    <button onClick={() => { window.scroll({ top: 0, behavior: 'smooth' }); }} className='text-2xl flex font-bold cursor-pointer text-text-color-dark'>Darien Labbe</button>
                                 </div>
                                 <div className='hidden md:block'>
                                     <div className='ml-10 flex items-center space-x-4'>
-                                        <button onClick={() => handleScroll('Projects')} className='text-border-color-gray duration-200 hover:bg-gradient-to-r from-primary-color to-secondary-color hover:text-white rounded-md px-3 py-2 text-sm font-medium'>Projects</button>
-                                        <button onClick={() => handleScroll('Skills')} className='text-border-color-gray duration-200 hover:bg-gradient-to-r from-primary-color to-secondary-color hover:text-white rounded-md px-3 py-2 text-sm font-medium'>Skills</button>
-                                        <button onClick={() => handleScroll('About')} className='text-border-color-gray duration-200 hover:bg-gradient-to-r from-primary-color to-secondary-color hover:text-white rounded-md px-3 py-2 text-sm font-medium'>About</button>
-                                        <button onClick={() => handleScroll('Contact')} className='text-border-color-gray duration-200 hover:bg-gradient-to-r from-primary-color to-secondary-color hover:text-white rounded-md px-3 py-2 text-sm font-medium'>Contact</button>
-                                        <button className='flex text-2xl text-footer-color cursor-pointer duration-200 hover:scale-110'><LuMoonStar/></button>
+                                        <button onClick={() => handleScroll('Projects')} className='text-border-color-gray duration-200 hover:bg-gradient-to-r from-dark-primary to-dark-secondary hover:text-white rounded-md px-3 py-2 text-sm font-medium'>Projects</button>
+                                        <button onClick={() => handleScroll('Skills')} className='text-border-color-gray duration-200 hover:bg-gradient-to-r from-dark-primary to-dark-secondary hover:text-white rounded-md px-3 py-2 text-sm font-medium'>Skills</button>
+                                        <button onClick={() => handleScroll('About')} className='text-border-color-gray duration-200 hover:bg-gradient-to-r from-dark-primary to-dark-secondary hover:text-white rounded-md px-3 py-2 text-sm font-medium'>About</button>
+                                        <button onClick={() => handleScroll('Contact')} className='text-border-color-gray duration-200 hover:bg-gradient-to-r from-dark-primary to-dark-secondary hover:text-white rounded-md px-3 py-2 text-sm font-medium'>Contact</button>
+                                        <button onClick={() => handleThemeSwap()} className='flex text-2xl text-footer-color cursor-pointer duration-200 hover:scale-110'><LuMoonStar/></button>
                                     </div>
                                 </div>
                             </div>

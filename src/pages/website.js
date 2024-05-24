@@ -9,7 +9,7 @@ function Website() {
     }, []);
 
     return (
-        <div>
+        <div className='text-text-color-dark'>
             <SmallNav/>
             <div>
                 <div className='flex flex-col justify-center items-center py-7 pt-16'>

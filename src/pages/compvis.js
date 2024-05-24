@@ -12,7 +12,7 @@ function CompVis() {
     return (
         <div>
             <SmallNav/>
-            <div>
+            <div className='text-text-color-dark'>
                 <div className='flex flex-col justify-center items-center py-7 pt-16'>
                     <h1 className='text-4xl p-2 max-md:text-2xl font-bold bg-gradient-to-r from-dark-primary to-dark-secondary bg-clip-text text-transparent'>Computer Vision</h1>
                 </div>

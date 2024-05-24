@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Biosound from './pages/Biosound.js';
@@ -13,6 +13,21 @@ import Worm from './pages/Worm.js';
 import Website from './pages/Website.js';
 
 function App() {
+  useEffect(() => {
+    // If the user has selected a theme, use that
+    const selectedTheme = localStorage.getItem('theme') ;
+
+    if (selectedTheme) {
+      document.body.classList.add(selectedTheme);
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      document.body.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.body.classList.add('light');
+      localStorage.setItem('theme', 'light');
+    }
+  }, []);
+
   return (
     <div className='bg-background font-randygg'>
       <Router>

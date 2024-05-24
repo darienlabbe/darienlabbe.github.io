@@ -17,7 +17,7 @@ function Server() {
                     <h1 className='text-4xl p-2 max-md:text-2xl font-bold bg-gradient-to-r from-dark-primary to-dark-secondary bg-clip-text text-transparent'>Home NAS Server using Ubuntu</h1>
                 </div>
                 <div className='flex flex-col justify-between items-center max-w-[1300px] m-auto pb-20'> 
-                    <div className='grid grid-cols-2 max-md:grid-cols-1 gap-8 px-16 items-center'>
+                    <div className='grid grid-cols-2 max-md:grid-cols-1 gap-8 px-16 items-center text-text-color-dark'>
                         <img src='server.png' className='border-border-color-gray/10 border-2 drop-shadow-lg rounded-lg max-w-96 max-sm:w-80 m-auto' alt='home nas server'/>
                         <div>
                             <h1 className='text-xl font-bold pb-2'>Project: Home NAS Server</h1>

@@ -11,7 +11,7 @@ function SmallNav() {
                     <div className='drop-shadow-lg shadow-lg'>
                         <div className='flex h-[90px] items-center justify-center'>
                             <div className='flex'>
-                                <div className='flex-shrink-0 flex items-center'>
+                                <div className='flex-shrink-0 flex items-center text-text-color-dark'>
                                     <PiBracketsCurlyBold className='h-6 w-6 mx-2'/>
                                     <Link to='/' className='text-2xl flex font-bold cursor-pointer'>Darien Labbe</Link>
                                 </div>

@@ -17,7 +17,7 @@ function AutoChickFeed() {
                     <h1 className='text-4xl p-2 max-md:text-2xl font-bold bg-gradient-to-r from-dark-primary to-dark-secondary bg-clip-text text-transparent'>The Automatic Chicken Feeder</h1>
                 </div>
                 <div className='flex flex-col justify-between items-center max-w-[1300px] m-auto pb-20'> 
-                    <div className='grid grid-cols-2 max-md:grid-cols-1 gap-8 px-16 items-center'>
+                    <div className='grid grid-cols-2 max-md:grid-cols-1 gap-8 px-16 items-center text-text-color-dark'>
                         <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/Chicken-Feeder-Senior-Project'><img src='autochickfeed.png' className='hover:scale-105 cursor-pointer border-border-color-gray/10 border-2 drop-shadow-lg duration-200 rounded-lg max-w-96 max-sm:w-80 m-auto' alt='automatic chicken feeder'/></a>
                         <div>
                             <h1 className='text-xl font-bold pb-2'>Project: The Automatic Chicken Feeder</h1>
