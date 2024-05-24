@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
 import SmallNav from "../components/SmallNav";
+import LeftArrow from "../components/LeftArrow";
+import RightArrow from "../components/RightArrow";
+import { Link } from "react-router-dom";
 
 function WordleGuesser() {
     useEffect(() => {
@@ -15,7 +18,7 @@ function WordleGuesser() {
                 </div>
                 <div className='flex flex-col justify-between items-center max-w-[1300px] m-auto pb-20'> 
                     <div className='grid grid-cols-2 max-md:grid-cols-1 gap-8 px-16 items-center'>
-                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/Wordle-Guesser'><img src='wordleguesser.jpg' className='hover:scale-105 cursor-pointer border-gray-500 border-2 border-opacity-10 drop-shadow-lg duration-200 rounded-lg' alt='wordle guesser'/></a>
+                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/Wordle-Guesser'><img src='wordleguesser.jpg' className='hover:scale-105 cursor-pointer border-gray-500 border-2 border-opacity-10 drop-shadow-lg duration-200 rounded-lg max-w-96 max-sm:w-80 m-auto' alt='wordle guesser'/></a>
                         <div>
                             <h1 className='text-xl font-bold pb-2'>Project: Wordle Guessing Program</h1>
                             <div>
@@ -28,6 +31,14 @@ function WordleGuesser() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="fixed bottom-[50%] left-10 right-10 flex justify-between items-center p-4 max-2xl:hidden">
+                <Link to='/SpamOrHam'><LeftArrow/></Link>
+                <Link to='/SocialMedia'><RightArrow/></Link>
+            </div>
+            <div className="hidden justify-center items-center p-4 mb-20 space-x-10 max-2xl:flex">
+                <Link to='/SpamOrHam'><LeftArrow/></Link>
+                <Link to='/SocialMedia'><RightArrow/></Link>
             </div>
         </div>
     );

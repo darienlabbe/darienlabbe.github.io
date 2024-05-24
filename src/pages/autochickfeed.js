@@ -1,7 +1,12 @@
 import React, { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import SmallNav from '../components/SmallNav.js';
+import LeftArrow from "../components/LeftArrow.js";
+import RightArrow from "../components/RightArrow.js";
 
 function AutoChickFeed() {
+    const navigate = useNavigate();
+
     useEffect(() => {
         window.scroll(0, 0)
     }, []);
@@ -15,10 +20,10 @@ function AutoChickFeed() {
                 </div>
                 <div className='flex flex-col justify-between items-center max-w-[1300px] m-auto pb-20'> 
                     <div className='grid grid-cols-2 max-md:grid-cols-1 gap-8 px-16 items-center'>
-                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/Chicken-Feeder-Senior-Project'><img src='autochickfeed.png' className='hover:scale-105 cursor-pointer border-gray-500 border-2 border-opacity-10 drop-shadow-lg duration-200 rounded-lg max-w-96 m-auto mb-20' alt='automatic chicken feeder'/></a>
+                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/Chicken-Feeder-Senior-Project'><img src='autochickfeed.png' className='hover:scale-105 cursor-pointer border-gray-500 border-2 border-opacity-10 drop-shadow-lg duration-200 rounded-lg max-w-96 max-sm:w-80 m-auto' alt='automatic chicken feeder'/></a>
                         <div>
                             <h1 className='text-xl font-bold pb-2'>Project: The Automatic Chicken Feeder</h1>
-                            <div className='mb-20'>
+                            <div>
                                 <p>This is my Sonoma State University Computer Science Capstone project. Over the course of several months I developed a React web app hosted 
                                     on a Raspberry Pi 4B that is connected to a relay to switch a motor on and off in order to automatically feed chickens. </p><br/>
                                 <p>I created a video presentation where I go over my project where I go into my project in depth. If you wish to view this video and learn more  
@@ -29,6 +34,14 @@ function AutoChickFeed() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="fixed bottom-[50%] left-10 right-10 flex justify-between items-center p-4 max-2xl:hidden">
+                <Link to='/Biosound'><LeftArrow/></Link>
+                <Link to='/Server'><RightArrow/></Link>
+            </div>
+            <div className="hidden justify-center items-center p-4 mb-20 space-x-10 max-2xl:flex">
+                <Link to='/Biosound'><LeftArrow/></Link>
+                <Link to='/Server'><RightArrow/></Link>
             </div>
         </div>
     );

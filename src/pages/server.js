@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import SmallNav from "../components/SmallNav";
+import LeftArrow from "../components/LeftArrow";
+import RightArrow from "../components/RightArrow";
 
 function Server() {
     useEffect(() => {
@@ -15,7 +18,7 @@ function Server() {
                 </div>
                 <div className='flex flex-col justify-between items-center max-w-[1300px] m-auto pb-20'> 
                     <div className='grid grid-cols-2 max-md:grid-cols-1 gap-8 px-16 items-center'>
-                        <img src='server.png' className='border-gray-500 border-2 border-opacity-10 drop-shadow-lg rounded-lg' alt='home nas server'/>
+                        <img src='server.png' className='border-gray-500 border-2 border-opacity-10 drop-shadow-lg rounded-lg max-w-96 max-sm:w-80 m-auto' alt='home nas server'/>
                         <div>
                             <h1 className='text-xl font-bold pb-2'>Project: Home NAS Server</h1>
                             <div>
@@ -39,6 +42,14 @@ function Server() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="fixed bottom-[50%] left-10 right-10 flex justify-between items-center p-4 max-2xl:hidden">
+                <Link to='/AutoChickFeed'><LeftArrow/></Link>
+                <Link to='/CompVis'><RightArrow/></Link>
+            </div>
+            <div className="hidden justify-center items-center p-4 mb-20 space-x-10 max-2xl:flex">
+                <Link to='/AutoChickFeed'><LeftArrow/></Link>
+                <Link to='/CompVis'><RightArrow/></Link>
             </div>
         </div>
     );
