@@ -1,15 +1,16 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
-import { LuMail } from 'react-icons/lu';
+import { LuMail, LuAtSign } from 'react-icons/lu';
+import { FaLocationDot } from "react-icons/fa6";
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import NavBar from '../components/NavBar';
 
 function Home() {
     const navigate = useNavigate();
 
-    useEffect(() => {
-        window.scroll(0, 0)
-    }, []);
+    // useEffect(() => {
+    //     window.scroll(0, 0)
+    // }, []);
 
     return (
         <div>
@@ -113,30 +114,32 @@ function Home() {
                         <div className='m-auto p-5 rounded-lg border-gray-500 border-2 border-opacity-10 drop-shadow-lg h-full w-[270px]'>
                             <img src='jobs.png' alt='jobs' className='flex m-auto w-32 items-center justify-center'/>
                             <p className='font-semibold'>Job Experience:</p>
-                            <p className='h-full'>I have worked as a Machine Learning Research and Developer, designing a CNN to detect for sound classifications for ecosystem analysis in South Africa</p>
+                            <p>I have worked as a Machine Learning Research and Developer, designing a CNN to detect for sound classifications 
+                            for ecosystem analysis in South Africa.</p>
+                            <p className='pt-2'>I have also worked as a shift supervisor for Starbucks for over 6 years.</p>
                         </div>
                         <div className='m-auto p-5 rounded-lg border-gray-500 border-2 border-opacity-10 drop-shadow-lg h-full w-[270px]'>
                             <img src='awards.png' alt='awards' className='flex m-auto w-32 items-center justify-center'/>
                             <p className='font-semibold'>Awards and Activities:</p>
                             <ul className='list-disc mx-5 h-full'>
                                 <li>Graduated With Distinction</li>
+                                <li>Graduated with a GPA of 3.73</li>
                                 <li>Voted Partner of the Quarter</li>
-                                <li>Completed the Starbucks North Bay SSV ADP</li>
+                                <li>Completed the Starbucks North Bay SSV ADP (a developement program for leaders)</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
             <section id='About' className='py-10 drop-shadow-md'>
-                <div className='flex flex-col justify-center items-center pt-16'>
+                <div className='grid justify-center items-center pt-16'>
                     <h1 className='text-4xl p-2 max-md:text-2xl font-bold bg-gradient-to-r from-emerald-700 to-green-400 bg-clip-text text-transparent'>About</h1>
                 </div>
-                <div className='flex flex-row max-md:flex-col justify-center items-center mx-96 max-2xl:mx-32 max-lg:mx-20 max-md:mx-auto'>
-                    <img className='flex items-center max-w-[400px] max-lg:max-w-[200px] rounded-lg border-gray-500 border-2 border-opacity-10 drop-shadow-lg' src='about.jpg' alt='about'/>
-                    <div className='flex flex-col justify-center max-md:items-center p-5 mx-4'>
-                        <h1 className="flex ">Hi I'm Darien</h1>
-                        <p className='flex'>I am a computer science student studying at Sonoma State University with the prospect
-                         of receiving my Bachelors of Science in Computer Science by May 2024. I have yet to narrow my focus onto 
+                <div className='flex space-x-8 mx-96 max-xl:mx-20 max-md:mx-10 max-md:flex-col pt-10 items-center'>
+                    <img className='grid max-w-60 rounded-lg border-gray-500 border-2 border-opacity-10 drop-shadow-lg' src='about.jpg' alt='about'/>
+                    <div className='grid grid-col-1'>
+                        <h1 className='font-semibold max-md:pt-10'>Hi I'm Darien</h1>
+                        <p className='pt-2'>I am a computer science major with experience in machine learning, full stack development, database management, graphics, . I have yet to narrow my focus onto 
                          any particular path in computer science, however, I have a very open mind and I cannot wait to see what 
                          I will get the opportunity to be able to create.</p>
                     </div>
@@ -145,7 +148,22 @@ function Home() {
             <section id='Contact' className='py-10 drop-shadow-md'>
                 <div className='flex flex-col justify-center items-center pt-16'>
                     <h1 className='text-4xl p-2 max-md:text-2xl font-bold bg-gradient-to-r from-emerald-700 to-green-400 bg-clip-text text-transparent'>Contact</h1>
-                    <p className='font-light tracking-wide mx-6 text-center'>Feel free to reach out</p>
+                    <p className='font-light tracking-wide mx-6 text-center mb-16'>Feel free to reach out</p>
+                    <div className='flex max-md:flex-col max-md:space-x-0 mb-20 items-center justify-center space-x-10 font-bold text-lg bg-gradient-to-r from-emerald-700 to-green-400 bg-clip-text text-transparent'>
+                        <div className='flex items-center'>
+                            <LuAtSign className='mx-1 text-xl text-emerald-700'/>
+                            <p>darienlabbe@gmail.com</p>
+                        </div>
+                        <div className='flex items-center'>
+                            <FaLocationDot className='mx-1 text-2xl text-emerald-500'/>
+                            <p>Sonoma County, CA</p>
+                        </div>
+                    </div>
+                    <div className='flex text-green-950'>
+                        <a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/darienlabbe/' className='cursor-pointer text-4xl mx-10 max-md:text-2xl duration-200 hover:text-[#0a66c2] hover:scale-110'><AiFillLinkedin/></a>
+                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe' className='cursor-pointer text-4xl mx-10 max-md:text-2xl duration-200 hover:text-[#f05639] hover:scale-110'><AiFillGithub/></a>
+                        <a href='mailto:darienlabbe@gmail.com' className='cursor-pointer text-4xl max-md:text-2xl mx-10 hover:text-green-600 duration-200 hover:scale-110'><LuMail/></a>
+                    </div>
                 </div>
             </section>
             <section id='Footer' className='w-full mt-24 text-white bg-green-950 h-60 content-center'>
