@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --background: 255, 255, 255;
+    
+    --dark-primary: 4, 120, 87;
+    --dark-secondary: 74, 222, 128;
+    --primary-color: 5, 150, 105;
+    --secondary-color: 34, 197, 94;
+    --light-emerald: 52, 211, 153;
+
+    --text-color-dark: 0, 0, 0;
+    --text-color-light: 255, 255, 255;
+    --text-emerald: 16, 185, 129;
+    --text-emerald-dark: 4, 120, 87;
+    --text-emerald-darkest: 5, 46, 22;
+    --text-hyperlink: 22, 163, 74;
+
+    --linkedin-hover: 10, 102, 194;
+    --github-hover: 240, 86, 57;
+
+    --border-color-emerald: 4, 120, 87;
+    --border-color-gray: 107, 114, 128;
+    --footer-color: 5, 46, 22;
+}

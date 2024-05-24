@@ -14,17 +14,17 @@ function Graphics() {
             <SmallNav/>
             <div>
                 <div className='flex flex-col justify-center items-center py-7 pt-16'>
-                    <h1 className='text-4xl p-2 max-md:text-2xl font-bold bg-gradient-to-r from-emerald-700 to-green-400 bg-clip-text text-transparent'>Graphics Projects</h1>
+                    <h1 className='text-4xl p-2 max-md:text-2xl font-bold bg-gradient-to-r from-dark-primary to-dark-secondary bg-clip-text text-transparent'>Graphics Projects</h1>
                 </div>
                 <div className='flex flex-col items-center max-w-[1300px] m-auto max-md:mx-8 pb-20'>
                     <p>This page holds the projects that I created throughout the course, CS 375 taught by Dave Shreiner, I took at Sonoma State that dives into computer 
                         graphics in WebGL. All the code for the projects shown on this page can be seen on my GitHub in a repository called CS-375. Click
-                        <a target='_blank' rel="noreferrer" href='https://www.sciencedirect.com/science/article/pii/S1470160X22003028' className='text-green-600 font-bold'> here </a>
+                        <a target='_blank' rel="noreferrer" href='https://www.sciencedirect.com/science/article/pii/S1470160X22003028' className='text-text-hyperlink font-bold'> here </a>
                         for that repository, or click on each image for the particular assignment that it is in.</p>
                 </div>
                 <div className='flex flex-col justify-between items-center max-w-[1300px] m-auto pb-20'> 
                     <div className='grid grid-cols-2 max-md:grid-cols-1 gap-8 px-16 items-center'>
-                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/CS-375/tree/main/Assignment-3'><img src='cube-light.png' className='hover:scale-105 duration-200 cursor-pointer border-gray-500 border-2 border-opacity-10 drop-shadow-lg w-96 h-96 rounded-lg max-w-96 max-sm:w-80 m-auto mb-20' alt='cube'/></a>
+                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/CS-375/tree/main/Assignment-3'><img src='cube-light.png' className='hover:scale-105 duration-200 cursor-pointer border-border-color-gray/10 border-2 drop-shadow-lg w-96 h-96 rounded-lg max-w-96 max-sm:w-80 m-auto mb-20' alt='cube'/></a>
                         <div className='mb-20'>
                             <h1 className='text-xl font-bold pb-2'>Cube Project:</h1>
                             <div className='text-lg'>
@@ -33,7 +33,7 @@ function Graphics() {
                                 <p>If you wish to take a look at the code behind this project, click the photo to be taken to the GitHub repository containing that code.</p>
                             </div>
                         </div>
-                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/CS-375/tree/main/Solar-System'><img src='solarsystem.jpg' className='hover:scale-105 duration-200 cursor-pointer border-gray-500 border-2 border-opacity-10 drop-shadow-lg rounded-lg max-w-96 max-sm:w-80 m-auto mb-20' alt='solar system'/></a>
+                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/CS-375/tree/main/Solar-System'><img src='solarsystem.jpg' className='hover:scale-105 duration-200 cursor-pointer border-border-color-gray/10 border-2 drop-shadow-lg rounded-lg max-w-96 max-sm:w-80 m-auto mb-20' alt='solar system'/></a>
                         <div className='mb-20'>
                             <h1 className='text-xl font-bold pb-2'>The Solar System Project:</h1>
                             <div className='text-lg'>
@@ -44,7 +44,7 @@ function Graphics() {
                                 <p>If you wish to take a look at the code behind this project, click the photo to be taken to the GitHub repository containing that code.</p>
                             </div>
                         </div>
-                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/CS-375/tree/main/Final-Project'><img src='ahouse.jpg' className='hover:scale-105 duration-200 cursor-pointer border-gray-500 border-2 border-opacity-10 drop-shadow-lg rounded-lg max-w-96 max-sm:w-80 m-auto' alt='the house project'/></a>
+                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/CS-375/tree/main/Final-Project'><img src='ahouse.jpg' className='hover:scale-105 duration-200 cursor-pointer border-border-color-gray/10 border-2 drop-shadow-lg rounded-lg max-w-96 max-sm:w-80 m-auto' alt='the house project'/></a>
                         <div>
                             <h1 className='text-xl font-bold pb-2'>A House Project:</h1>
                             <div className='text-lg'>

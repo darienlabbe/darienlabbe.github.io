@@ -14,11 +14,11 @@ function SocialMedia() {
             <SmallNav/>
             <div>
                 <div className='flex flex-col justify-center items-center py-7 pt-16'>
-                    <h1 className='text-4xl p-2 max-md:text-2xl font-bold bg-gradient-to-r from-emerald-700 to-green-400 bg-clip-text text-transparent'>Social Media Project</h1>
+                    <h1 className='text-4xl p-2 max-md:text-2xl font-bold bg-gradient-to-r from-dark-primary to-dark-secondary bg-clip-text text-transparent'>Social Media Project</h1>
                 </div>
                 <div className='flex flex-col justify-between items-center max-w-[1300px] m-auto pb-20'> 
                     <div className='grid grid-cols-2 max-md:grid-cols-1 gap-8 px-16 items-center'>
-                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/Our-Space'><img src='socialmedia.jpg' className='hover:scale-105 cursor-pointer border-gray-500 border-2 border-opacity-10 drop-shadow-lg duration-200 rounded-lg max-w-96 max-sm:w-80 m-auto' alt='our space social media'/></a>
+                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/Our-Space'><img src='socialmedia.jpg' className='hover:scale-105 cursor-pointer border-border-color-gray/10 border-2 drop-shadow-lg duration-200 rounded-lg max-w-96 max-sm:w-80 m-auto' alt='our space social media'/></a>
                         <div>
                             <h1 className='text-xl font-bold pb-2'>Project: My Social Media</h1>
                             <div>

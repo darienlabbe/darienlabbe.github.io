@@ -14,7 +14,7 @@ import Website from './pages/Website.js';
 
 function App() {
   return (
-    <div className='bg-white font-randygg'>
+    <div className='bg-background font-randygg'>
       <Router>
         <Routes>
           <Route path='/' element={<Home id='Home'/>}/>
