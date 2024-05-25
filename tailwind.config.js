@@ -8,7 +8,7 @@ module.exports = {
       fontFamily: {
         'nunito': ['nunito', 'sans-serif'],
         'consolas': ['consolas', 'mono'],
-        'randygg' : ['randygg', 'consolas']
+        'randygg' : ['randygg', 'mono']
       },
       colors: {
         background: "rgba(var(--background), 1)",
