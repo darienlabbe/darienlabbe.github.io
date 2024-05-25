@@ -34,7 +34,7 @@ function App() {
   }, []);
 
   return (
-    <div className='bg-background text-t-main overflow-x-clip min-h-screen font-consolas'>
+    <div className='bg-background text-t-main overflow-x-clip min-h-screen font-randygg'>
       <Router>
         <Routes>
           <Route path='/' element={<Home id='Home'/>}/>
