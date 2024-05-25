@@ -159,7 +159,7 @@ function Home() {
             <section id='Contact' className='py-10 drop-shadow-md'>
                 <div className='flex flex-col justify-center items-center pt-16'>
                     <h1 className='text-4xl p-2 font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>Contact</h1>
-                    <p className='font-light tracking-wide mx-6 text-center mb-16'>Feel free to reach out</p>
+                    <p className='font-light tracking-wide mx-6 text-center mb-16'>Feel free to reach out!</p>
                     <div className='flex max-md:flex-col max-md:space-x-0 mb-20 items-center justify-center space-x-10 font-bold text-lg bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>
                         <div className='flex items-center'>
                             <LuAtSign className='mx-1 text-xl text-primary'/>

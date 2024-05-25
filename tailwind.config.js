@@ -6,9 +6,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'nunito': ['nunito', 'sans-serif'],
+        'randygg' : ['randygg', 'consolas', 'mono'],
         'consolas': ['consolas', 'mono'],
-        'randygg' : ['randygg', 'consolas', 'mono']
+        'nunito': ['nunito', 'sans-serif'],
       },
       colors: {
         background: "rgba(var(--background), 1)",
