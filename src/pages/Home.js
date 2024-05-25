@@ -20,7 +20,7 @@ function Home() {
             <section id='Title' className='flex max-md:flex-col justify-between items-center drop-shadow-md'>
                 <div className='m-auto max-sm:ml-auto'>
                     <div className='ml-32 max-xl:ml-14 max-sm:ml-auto'>
-                        <h1 className='text-6xl max-md:text-4xl m-auto mt-5 max-md:mt-1 pt-10 font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>Darien Labbe</h1>
+                        <h1 className='text-7xl max-lg:text-6xl max-md:text-4xl m-auto mt-5 max-md:mt-1 pt-10 font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>Darien Labbe</h1>
                         <h2 className='text-4xl max-md:text-2xl m-auto mt-5 max-md:mt-1 font-semibold'>Computer Science</h2>
                         <h2 className='text-3xl max-md:text-xl m-auto mt-5 max-md:mt-1 font-semibold text-t-main/70'>Aspiring Software Engineer</h2>
                         <div className='flex text-t-dark mt-10 max-md:mt-3'>
@@ -40,7 +40,7 @@ function Home() {
             <section id='Projects' className='py-10 drop-shadow-md'>
                 <div className='flex flex-col justify-center items-center py-7 pt-16'>
                     <h1 className='text-4xl p-2 font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>Projects</h1>
-                    <p className='font-light tracking-wide mx-6 text-center'>Click on a project to learn more</p>
+                    <p className='font-light tracking-wide mx-6 text-center'>Click on a project to learn more:</p>
                 </div>
                 <div className='flex flex-col justify-between items-center max-w-[1000px] m-auto'>
                     <div className='grid grid-cols-2 max-md:grid-cols-1 gap-5 px-16'>
@@ -60,7 +60,7 @@ function Home() {
             <section id='Skills' className='py-10 drop-shadow-md text-sm'>
                 <div className='flex flex-col justify-center items-center pt-16'>
                     <h1 className='text-4xl p-2 font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>Skills</h1>
-                    <p className='font-light tracking-wide mx-6 text-center'>List of my skills I have developed over the years</p>
+                    <p className='font-light tracking-wide mx-6 text-center'>List of my skills I have developed over the years:</p>
                 </div>
                 <div className='max-w-[1000px] m-auto grid grid-cols-3 max-lg:grid-cols-1 gap-2 px-16 grid-auto-rows-auto'>
                     <div className='grid grid-rows-2 gap-2 h-full pt-5 max-lg:flex-col max-lg:flex'>
@@ -159,8 +159,8 @@ function Home() {
             <section id='Contact' className='py-10 drop-shadow-md'>
                 <div className='flex flex-col justify-center items-center pt-16'>
                     <h1 className='text-4xl p-2 font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>Contact</h1>
-                    <p className='font-light tracking-wide mx-6 text-center mb-16'>Feel free to reach out!</p>
-                    <div className='flex max-md:flex-col max-md:space-x-0 mb-20 items-center justify-center space-x-10 font-bold text-lg bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>
+                    <p className='font-light tracking-wide mx-6 text-center mb-11'>Feel free to reach out!</p>
+                    <div className='flex max-md:flex-col max-md:space-x-0 max-md:space-y-3 mb-14 items-center justify-center space-x-10 font-bold text-lg bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>
                         <div className='flex items-center'>
                             <LuAtSign className='mx-1 text-xl text-primary'/>
                             <p>darienlabbe@gmail.com</p>
