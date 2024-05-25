@@ -8,9 +8,9 @@ import NavBar from '../components/NavBar';
 function Home() {
     const navigate = useNavigate();
 
-    useEffect(() => {
-        window.scroll(0, 0)
-    }, []);
+    // useEffect(() => {
+    //     window.scroll(0, 0)
+    // }, []);
 
     return (
         <div>
@@ -37,7 +37,7 @@ function Home() {
             </section>
             <section id='Projects' className='py-10 drop-shadow-md'>
                 <div className='flex flex-col justify-center items-center py-7 pt-16'>
-                    <h1 className='text-4xl p-2 max-md:text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>Projects</h1>
+                    <h1 className='text-4xl p-2 font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>Projects</h1>
                     <p className='font-light tracking-wide mx-6 text-center'>Click on a project to learn more</p>
                 </div>
                 <div className='flex flex-col justify-between items-center max-w-[1000px] m-auto'>
@@ -57,7 +57,7 @@ function Home() {
             </section>
             <section id='Skills' className='py-10 drop-shadow-md'>
                 <div className='flex flex-col justify-center items-center pt-16'>
-                    <h1 className='text-4xl p-2 max-lg:text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>Skills</h1>
+                    <h1 className='text-4xl p-2 font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>Skills</h1>
                     <p className='font-light tracking-wide mx-6 text-center'>List of my skills I have developed over the years</p>
                 </div>
                 <div className='max-w-[1000px] m-auto grid grid-cols-3 max-lg:grid-cols-1 gap-2 px-16 grid-auto-rows-auto'>
@@ -131,23 +131,26 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section id='About' className='py-10 drop-shadow-md'>
+            <section id='About' className='py-10 drop-shadow-md max-w-[1600px] m-auto'>
                 <div className='grid justify-center items-center pt-16'>
-                    <h1 className='text-4xl p-2 max-md:text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>About</h1>
+                    <h1 className='text-4xl p-2 font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>About</h1>
                 </div>
                 <div className='flex space-x-8 mx-96 max-xl:mx-20 max-md:mx-10 max-md:flex-col pt-10 items-center'>
                     <img className='grid max-w-60 rounded-lg border-border-gray border-2 drop-shadow-lg' src='about.jpg' alt='about'/>
                     <div className='grid grid-col-1'>
-                        <h1 className='font-semibold max-md:pt-10'>Hi I'm Darien</h1>
-                        <p className='pt-2'>I am a computer science major with experience in machine learning, full stack development, database management, graphics, . I have yet to narrow my focus onto 
-                         any particular path in computer science, however, I have a very open mind and I cannot wait to see what 
-                         I will get the opportunity to be able to create.</p>
+                        <h1 className='font-semibold text-lg max-md:pt-10'>Hi I'm Darien,</h1>
+                        <p className='pt-2'>I am a computer science major with experience in machine learning, full stack development, database management, graphics, 
+                            and more. I currently work as a machine learning research and developer for the BioSoundSCape Project which you can learn more about above.
+                            While I am currently in the machine learning and AI industry, I am still very fascinated by the rest of the computer science field and I 
+                            would love to dive into almost any opportunity I can get. I have experience working in a team environment, leadership, and coaching roles.
+                            I am a hard worker, I take pride in everything I do, and I am always looking to learn more. As my future in tech marches closer and closer, 
+                            I cannot wait to see what I might have the ability to create.</p>
                     </div>
                 </div>
             </section>
             <section id='Contact' className='py-10 drop-shadow-md'>
                 <div className='flex flex-col justify-center items-center pt-16'>
-                    <h1 className='text-4xl p-2 max-md:text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>Contact</h1>
+                    <h1 className='text-4xl p-2 font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>Contact</h1>
                     <p className='font-light tracking-wide mx-6 text-center mb-16'>Feel free to reach out</p>
                     <div className='flex max-md:flex-col max-md:space-x-0 mb-20 items-center justify-center space-x-10 font-bold text-lg bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>
                         <div className='flex items-center'>

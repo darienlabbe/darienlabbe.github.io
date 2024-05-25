@@ -12,7 +12,7 @@ function AutoChickFeed() {
     return (
         <div>
             <SmallNav/>
-            <div>
+            <div className='drop-shadow-md'>
                 <div className='flex flex-col justify-center items-center py-7 pt-16'>
                     <h1 className='text-4xl p-2 max-md:text-2xl max-sm:text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>The Automatic Chicken Feeder</h1>
                 </div>

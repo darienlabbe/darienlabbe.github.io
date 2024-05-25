@@ -18,10 +18,6 @@ module.exports = {
         "middle-color": "rgba(var(--middle-color), 1)",
         highlight: "rgba(var(--highlight), 1)",
         
-        // "primary-color": "rgba(var(--primary-color), 1)",
-        // "secondary-color": "rgba(var(--secondary-color), 1)",
-        // "light-emerald": "rgba(var(--light-emerald)))",
-
         "t-main": "rgba(var(--t-main), 1)",
         "t-dark": "rgba(var(--t-dark), 1)",
         "t-nav": "rgba(var(--t-nav), 1)",
