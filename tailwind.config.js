@@ -13,24 +13,26 @@ module.exports = {
       colors: {
         background: "rgba(var(--background), 1)",
         
-        "dark-primary":"rgba(var(--dark-primary), 1)",
-        "dark-secondary":"rgba(var(--dark-secondary), 1)",
-        "primary-color":"rgba(var(--primary-color), 1)",
-        "secondary-color":"rgba(var(--secondary-color), 1)",
-        "light-emerald": "rgba(var(--light-emerald)))",
+        primary: "rgba(var(--primary), 1)",
+        secondary: "rgba(var(--secondary), 1)",
+        "middle-color": "rgba(var(--middle-color), 1)",
+        highlight: "rgba(var(--highlight), 1)",
+        
+        // "primary-color": "rgba(var(--primary-color), 1)",
+        // "secondary-color": "rgba(var(--secondary-color), 1)",
+        // "light-emerald": "rgba(var(--light-emerald)))",
 
-        "text-color-dark": "rgba(var(--text-color-dark), 1)",
-        "text-color-light": "rgba(var(--text-color-light), 1)",
-        "text-emerald": "rgba(var(--text-emerald), 1)",
-        "text-emerald-dark": "rgba(var(--text-emerald-dark), 1)",
-        "text-emerald-darkest": "rgba(var(--text-emerald-darkest), 1)",
-        "text-hyperlink": "rgba(var(--text-hyperlink), 1)",
+        "t-main": "rgba(var(--t-main), 1)",
+        "t-dark": "rgba(var(--t-dark), 1)",
+        "t-nav": "rgba(var(--t-nav), 1)",
+        "t-link": "rgba(var(--t-link), 1)",
         
         "linkedin-hover": "rgba(var(--linkedin-hover), 1)",
         "github-hover": "rgba(var(--github-hover), 1)",
-        
-        "border-color-emerald": "rgba(var(--border-color-emerald), 1)",
-        "border-color-gray": "rgba(var(--border-color-gray), 1)",
+        "arrow-bg": "rgba(var(--arrow-bg), 1)",
+
+        "b-primary": "rgba(var(--border-primary), 1)",
+        "border-gray": "rgba(var(--border-gray))",
         "footer-color": "rgba(var(--footer-color), 1)",
       },
     },

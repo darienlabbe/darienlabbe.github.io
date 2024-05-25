@@ -14,9 +14,14 @@ import Website from './pages/Website.js';
 
 function App() {
   useEffect(() => {
+    // Remove the currently applied theme so a new them can be applied
+    document.body.classList.remove('light');
+    document.body.classList.remove('dark');
+
     // If the user has selected a theme, use that
     const selectedTheme = localStorage.getItem('theme') ;
 
+    // Apply the theme from localStorage, use the prefered theme, or default to light theme
     if (selectedTheme) {
       document.body.classList.add(selectedTheme);
     } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -29,7 +34,7 @@ function App() {
   }, []);
 
   return (
-    <div className='bg-background font-randygg'>
+    <div className='bg-background text-t-main overflow-x-clip min-h-screen font-randygg'>
       <Router>
         <Routes>
           <Route path='/' element={<Home id='Home'/>}/>

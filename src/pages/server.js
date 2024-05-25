@@ -14,14 +14,14 @@ function Server() {
             <SmallNav/>
             <div>
                 <div className='flex flex-col justify-center items-center py-7 pt-16'>
-                    <h1 className='text-4xl p-2 max-md:text-2xl font-bold bg-gradient-to-r from-dark-primary to-dark-secondary bg-clip-text text-transparent'>Home NAS Server using Ubuntu</h1>
+                    <h1 className='text-4xl max-md:text-2xl max-sm:text-xl p-2 font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>Home NAS Server using Ubuntu</h1>
                 </div>
                 <div className='flex flex-col justify-between items-center max-w-[1300px] m-auto pb-20'> 
-                    <div className='grid grid-cols-2 max-md:grid-cols-1 gap-8 px-16 items-center text-text-color-dark'>
-                        <img src='server.png' className='border-border-color-gray/10 border-2 drop-shadow-lg rounded-lg max-w-96 max-sm:w-80 m-auto' alt='home nas server'/>
+                    <div className='grid grid-cols-2 max-md:grid-cols-1 gap-8 px-16 items-center'>
+                        <img src='server.png' className='border-border-gray border-2 drop-shadow-lg rounded-lg max-w-96 max-lg:w-80 max-sm:w-60 m-auto' alt='home nas server'/>
                         <div>
-                            <h1 className='text-xl font-bold pb-2'>Project: Home NAS Server</h1>
-                            <div>
+                            <h1 className='text-xl max-md:text-lg font-bold pb-2'>Project: Home NAS Server</h1>
+                            <div className='text-base max-md:text-sm'>
                                 <p>This project was started to solve a problem that I was having, I had too many photos and not enough space for them all. I had completely
                                     run out of room in my google photos account and I did not want to have to pay for more storage. So I decided to create my own home NAS server.</p><br/>
                                 <p>After a large amount of research I started scouring ebay, Craigslist, facebook marketplace, and many other places for cheap computer parts that 
@@ -43,13 +43,17 @@ function Server() {
                     </div>
                 </div>
             </div>
-            <div className="fixed bottom-[50%] left-10 right-10 flex justify-between items-center p-4 max-2xl:hidden">
-                <Link to='/AutoChickFeed'><LeftArrow/></Link>
-                <Link to='/CompVis'><RightArrow/></Link>
-            </div>
-            <div className="hidden justify-center items-center p-4 mb-20 space-x-10 max-2xl:flex">
-                <Link to='/AutoChickFeed'><LeftArrow/></Link>
-                <Link to='/CompVis'><RightArrow/></Link>
+            <div className='max-2xl:h-40'>
+                <div className="fixed bottom-[50%] left-10 flex justify-between items-center p-4 max-2xl:hidden">
+                    <Link to='/AutoChickFeed'><LeftArrow/></Link>
+                </div>
+                <div className="fixed bottom-[50%] right-10 flex justify-between items-center p-4 max-2xl:hidden">
+                    <Link to='/CompVis'><RightArrow/></Link>
+                </div>
+                <div className="hidden justify-center items-center p-4 space-x-10 max-2xl:flex">
+                    <Link to='/AutoChickFeed'><LeftArrow/></Link>
+                    <Link to='/CompVis'><RightArrow/></Link>
+                </div>
             </div>
         </div>
     );
