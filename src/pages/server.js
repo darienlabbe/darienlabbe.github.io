@@ -5,6 +5,7 @@ import LeftArrow from "../components/LeftArrow";
 import RightArrow from "../components/RightArrow";
 
 function Server() {
+    // Ensure that when the page loads the top of the page is what is shown
     useEffect(() => {
         window.scroll(0, 0)
     }, []);

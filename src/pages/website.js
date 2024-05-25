@@ -4,6 +4,7 @@ import LeftArrow from "../components/LeftArrow";
 import { Link } from "react-router-dom";
 
 function Website() {
+    // Ensure that when the page loads the top of the page is what is shown
     useEffect(() => {
         window.scroll(0, 0)
     }, []);

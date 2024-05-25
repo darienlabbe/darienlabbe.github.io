@@ -1,7 +1,9 @@
+/* --- Enable Tailwind CSS --- */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* --- Theme for light mode --- */
 .light {
     --background: 245, 245, 245;
     
@@ -25,6 +27,7 @@
     --footer-color: 5, 46, 22;
 }
 
+/* --- Theme for dark mode --- */
 .dark {
     --background: 43, 55, 61;
     

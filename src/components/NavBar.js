@@ -5,10 +5,12 @@ import { PiBracketsCurlyBold } from 'react-icons/pi';
 import { IoReorderThreeOutline } from "react-icons/io5";
 
 function NavBar() {
+    // States for the use of the nav elements and tracking the theme
     const [nav, setNav] = useState(false);
     const handleNav = () => { setNav(!nav); };
     const [isDark, setTheme] = useState(localStorage.getItem('theme') === 'dark');
 
+    // When selecting an element on the nav, make sure the scrolling is smooth
     function handleScroll(id) {
         document.getElementById(id)?.scrollIntoView({
             block: 'start',
@@ -16,11 +18,13 @@ function NavBar() {
         });
     };
 
+    // Same as the handleScroll above with the additional functionality of the openable mobile nav
     function handleMobileNav(id) {
         handleNav();
         handleScroll(id);
     }
 
+    // Function for handling theme swapping 
     function handleThemeSwap() {
         // Remove the currently applied theme so a new them can be applied
         document.body.classList.remove('light');
@@ -58,12 +62,12 @@ function NavBar() {
                                         <button onClick={() => handleScroll('Skills')} className='text-t-nav duration-200 hover:bg-gradient-to-r from-primary to-secondary hover:text-white rounded-md px-3 py-2 text-sm font-medium'>Skills</button>
                                         <button onClick={() => handleScroll('About')} className='text-t-nav duration-200 hover:bg-gradient-to-r from-primary to-secondary hover:text-white rounded-md px-3 py-2 text-sm font-medium'>About</button>
                                         <button onClick={() => handleScroll('Contact')} className='text-t-nav duration-200 hover:bg-gradient-to-r from-primary to-secondary hover:text-white rounded-md px-3 py-2 text-sm font-medium'>Contact</button>
-                                        {isDark? <button onClick={() => handleThemeSwap()} className='flex text-2xl text-t-dark cursor-pointer duration-200 hover:scale-110'><FiSun/></button> : <button onClick={() => handleThemeSwap()} className='flex text-2xl text-t-dark cursor-pointer duration-200 hover:scale-110'><LuMoonStar/></button>}
+                                        <button onClick={() => handleThemeSwap()} className='flex text-2xl text-t-dark cursor-pointer duration-200 hover:scale-110'>{isDark? <FiSun/> : <LuMoonStar/>}</button>
                                     </div>
                                 </div>
                             </div>
                             <div className='flex justify-center items-center md:hidden'>
-                                {isDark? <button onClick={() => handleThemeSwap()} className='flex text-2xl text-t-dark cursor-pointer duration-200 hover:scale-110'><FiSun/></button> : <button onClick={() => handleThemeSwap()} className='flex text-2xl text-t-dark cursor-pointer duration-200 hover:scale-110'><LuMoonStar/></button>}
+                                <button onClick={() => handleThemeSwap()} className='flex text-2xl text-t-dark cursor-pointer duration-200 hover:scale-110'>{isDark? <FiSun/> : <LuMoonStar/>}</button>
                             </div>
                             <div className='flex justify-center items-center md:hidden'>
                                 <button onClick={handleNav} type='button' className='relative inline-flex items-center justify-center rounded-md bg-gradient-to-r from-primary to-secondary p-2 text-white focus:ring-1 focus:ring-offset-2 focus:ring-offset-secondary' aria-controls='mobile-menu' aria-expanded='false'>

@@ -5,8 +5,10 @@ import { LuMoonStar } from 'react-icons/lu';
 import { FiSun } from 'react-icons/fi';
 
 function SmallNav() {
+    // State for tracking the theme
     const [isDark, setTheme] = useState(localStorage.getItem('theme') === 'dark');
 
+    // Function for handling theme swapping
     function handleThemeSwap() {
         // Remove the currently applied theme so a new them can be applied
         document.body.classList.remove('light');
@@ -39,7 +41,7 @@ function SmallNav() {
                                     <Link to='/' className='text-2xl flex font-bold cursor-pointer'>Darien Labbe</Link>
                                 </div>
                                 <div className='flex items-center mx-2'>
-                                    {isDark? <button onClick={() => handleThemeSwap()} className='flex text-2xl text-t-dark cursor-pointer duration-200 hover:scale-110'><FiSun/></button> : <button onClick={() => handleThemeSwap()} className='flex text-2xl text-t-dark cursor-pointer duration-200 hover:scale-110'><LuMoonStar/></button>}
+                                    <button onClick={() => handleThemeSwap()} className='flex text-2xl text-t-dark cursor-pointer duration-200 hover:scale-110'>{isDark? <FiSun/> : <LuMoonStar/>}</button>
                                 </div>
                             </div>
                         </div>

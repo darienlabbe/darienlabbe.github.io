@@ -21,7 +21,7 @@ function App() {
     // If the user has selected a theme, use that
     const selectedTheme = localStorage.getItem('theme') ;
 
-    // Apply the theme from localStorage, use the prefered theme, or default to light theme
+    // Apply the theme from localStorage, use the preferred theme, or default to light theme
     if (selectedTheme) {
       document.body.classList.add(selectedTheme);
     } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {

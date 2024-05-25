@@ -5,6 +5,7 @@ import LeftArrow from "../components/LeftArrow";
 import RightArrow from "../components/RightArrow";
 
 function CompVis() {
+    // Ensure that when the page loads the top of the page is what is shown
     useEffect(() => {
         window.scroll(0, 0)
     }, []);
@@ -54,7 +55,7 @@ function CompVis() {
                             <h1 className='text-xl max-md:text-lg font-bold pb-2'>EuroSat LandUse:</h1>
                             <div className='text-base max-md:text-sm'>
                                 <p>This project uses the EuroSat dataset to construct a number of different CNNs attempting to predict different satellite images. The first CNN 
-                                    is a simple CNN that only uses a few layers. The second uses transfer learning in order to use the ResNet50 pretrained model. The third model 
+                                    is a simple CNN that only uses a few layers. The second uses transfer learning in order to use the ResNet50 pre-trained model. The third model 
                                     is similar to the second model, however, the third model makes an attempt at adding more layers and attempts to fine-tune the model in order 
                                     to get even higher accuracies. If you wish to view the code, click on the image.</p><br/>
                                 <p>The final accuracy tested against validation data for the third CNN was: 96.0%</p>
@@ -68,7 +69,7 @@ function CompVis() {
                                     an extra challenge when developing CNNs for this particular dataset. For this project in particular, I developed four different CNNs, starting 
                                     simple and working towards more and more complex designs. The first CNN was a simple one with only 11 total layers and a goal of demonstrating 
                                     the overfitting problem. The second CNN that I made tries to use a number of different techniques to mitigate the overfitting problem, like 
-                                    kernal L2 regularizors with weight decay, dropout layers, and batch normalization. The second CNN did not focus on trying to improve the overall 
+                                    kernel L2 regularizers with weight decay, dropout layers, and batch normalization. The second CNN did not focus on trying to improve the overall 
                                     practical accuracy of the model, and instead was a way of testing how to decrease the overall amount of overfitting. The third CNN that I created 
                                     used what I learned in the second CNN and I utilized transfer learning to include the ResNet50 model with a number of additional layers as well. 
                                     This third CNN ended with an accuracy of about ~74%-76% validation accuracy when testing and I felt that I could do better so I made a fourth 
@@ -85,7 +86,7 @@ function CompVis() {
                                 <p>The BioSoundSCape project was my final project for the CS 479 course. I was in a group with two other students and we attempted to tackle the task 
                                     of using the previously developed project, discussed in great detail in the scientific paper 
                                     <a target='_blank' rel="noreferrer" href='https://www.sciencedirect.com/science/article/pii/S1470160X22003028' className='text-t-link font-bold'> here</a>, 
-                                    on the new sound data recently collected in South Africa, with nearly 15 GBs of wav files in total. To give a breif overview of the goal of the 
+                                    on the new sound data recently collected in South Africa, with nearly 15 GBs of wav files in total. To give a brief overview of the goal of the 
                                     original project, the project aimed to collect sound data from around Sonoma County, turn those sound files into spectrograms, develop a CNN that 
                                     could find particular regions of interest (ROIs) in those sound files, and then determine what category of sound those regions belong to (like 
                                     for instance animal sounds, human sounds, etc). Being able to separate the mass amount of data collected into data points of each type of sound 
