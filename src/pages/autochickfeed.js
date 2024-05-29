@@ -112,7 +112,7 @@ function AutoChickFeed() {
                                         loop for now, however, I also want to try to do so while being completely severed from physical connection to the pi this time. Since the Pi is capable of being 
                                         controlled through an SSH connection, I can write and run code on the Pi through SSH on my laptop. From here I will be able to start moving onto my next steps 
                                         where I try to build a simple JavaScript page that can control the Pi through a web connection.</li>
-                                    <li><p className='font-semibold'>Furthermore, I did more research on other subjects as well:</p>
+                                    <li><p>Furthermore, I did more research on other subjects as well:</p>
                                         GFCI watches for current leaving and not returning, if there is a difference the connection is stopped and thus protection is provided. Adding a fuse between 
                                         the motor and power source could help ensure that there is not excess power being delivered to the motor and therefore this helps with fire prevention. Ground 
                                         connection, while not necessary, if the motor was to ware down in a way that allows the body of the motor to short the connection will allow for line voltage to 

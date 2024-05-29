@@ -4,6 +4,8 @@ import { LuMail, LuAtSign } from 'react-icons/lu';
 import { FaLocationDot } from "react-icons/fa6";
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import NavBar from '../components/NavBar';
+import ProjectImages from '../components/ProjectImages.js';
+import AboutImages from '../components/AboutImage.js';
 
 function Home() {
     // Navigation to travel to the project pages
@@ -44,16 +46,16 @@ function Home() {
                 </div>
                 <div className='flex flex-col justify-between items-center max-w-[1000px] m-auto'>
                     <div className='grid grid-cols-2 max-md:grid-cols-1 gap-5 px-16'>
-                        <button onClick={() => navigate("/Biosound")}><img href='../pages/Biosound.js' src='biosound.png' className='hover:scale-105 cursor-pointer border-border-gray border-2 drop-shadow-lg duration-200 rounded-lg' alt='BioSoundSCape Internship'/></button>
-                        <button onClick={() => navigate("/Autochickfeed")}><img href='../pages/Autochickfeed.js' src='autochickfeed.png' className='hover:scale-105 cursor-pointer border-border-gray border-2 drop-shadow-lg duration-200 rounded-lg' alt='automatic chicken feeder'/></button>
-                        <button onClick={() => navigate("/Server")}><img href='../pages/Server.js' src='server.png' className='hover:scale-105 cursor-pointer border-border-gray border-2 drop-shadow-lg duration-200 rounded-lg' alt='nas server'/></button>
-                        <button onClick={() => navigate("/Compvis")}><img href='../pages/Compvis.js' src='computervision.jpg' className='hover:scale-105 cursor-pointer border-border-gray border-2 drop-shadow-lg duration-200 rounded-lg' alt='computer vision projects'/></button>
-                        <button onClick={() => navigate("/Graphics")}><img href='../pages/Graphics.js' src='cube.jpg' className='hover:scale-105 cursor-pointer border-border-gray border-2 drop-shadow-lg duration-200 rounded-lg' alt='graphics projects'/></button>
-                        <button onClick={() => navigate("/Spamorham")}><img href='../pages/Spamorham.js' src='spamorham.jpg' className='hover:scale-105 cursor-pointer border-border-gray border-2 drop-shadow-lg duration-200 rounded-lg' alt='spam or not project'/></button>
-                        <button onClick={() => navigate("/Wordleguesser")}><img href='../pages/Wordleguesser.js' src='wordleguesser.jpg' className='hover:scale-105 cursor-pointer border-border-gray border-2 drop-shadow-lg duration-200 rounded-lg' alt='wordle guesser project'/></button>
-                        <button onClick={() => navigate("/Socialmedia")}><img href='../pages/Socialmedia.js' src='socialmedia.jpg' className='hover:scale-105 cursor-pointer border-border-gray border-2 drop-shadow-lg duration-200 rounded-lg' alt='our space project'/></button>
-                        <button onClick={() => navigate("/Worm")}><img href='../pages/Worm.js' src='wormtitle.jpg' className='hover:scale-105 cursor-pointer border-border-gray border-2 drop-shadow-lg duration-200 rounded-lg' alt='worm project'/></button>
-                        <button onClick={() => navigate("/Website")}><img href='../pages/Website.js' src='website.jpg' className='hover:scale-105 cursor-pointer border-border-gray border-2 drop-shadow-lg duration-200 rounded-lg' alt='this website'/></button>
+                        <button onClick={() => navigate("/Biosound")}><ProjectImages href='../pages/Biosound.js' src='biosound.png'/></button>
+                        <button onClick={() => navigate("/Autochickfeed")}><ProjectImages href='../pages/Autochickfeed.js' src='autochickfeed.png'/></button>
+                        <button onClick={() => navigate("/Server")}><ProjectImages href='../pages/Server.js' src='server.png'/></button>
+                        <button onClick={() => navigate("/Compvis")}><ProjectImages href='../pages/Compvis.js' src='computervision.jpg'/></button>
+                        <button onClick={() => navigate("/Graphics")}><ProjectImages href='../pages/Graphics.js' src='cube.jpg'/></button>
+                        <button onClick={() => navigate("/Spamorham")}><ProjectImages href='../pages/Spamorham.js' src='spamorham.jpg'/></button>
+                        <button onClick={() => navigate("/Wordleguesser")}><ProjectImages href='../pages/Wordleguesser.js' src='wordleguesser.jpg'/></button>
+                        <button onClick={() => navigate("/Socialmedia")}><ProjectImages href='../pages/Socialmedia.js' src='socialmedia.jpg'/></button>
+                        <button onClick={() => navigate("/Worm")}><ProjectImages href='../pages/Worm.js' src='wormtitle.jpg'/></button>
+                        <button onClick={() => navigate("/Website")}><ProjectImages href='../pages/Website.js' src='website.jpg'/></button>
                     </div>
                 </div>
             </section>
@@ -144,7 +146,7 @@ function Home() {
                     <h1 className='text-4xl p-2 font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>About</h1>
                 </div>
                 <div className='flex space-x-8 mx-96 max-xl:mx-20 max-md:mx-10 max-md:flex-col pt-10 items-center'>
-                    <img className='grid max-w-60 rounded-lg border-border-gray border-2 drop-shadow-lg' src='about.jpg' alt='about'/>
+                    <AboutImages src='about.jpg'/>
                     <div className='grid grid-col-1'>
                         <h1 className='font-semibold text-lg max-md:pt-10'>Hi I'm Darien,</h1>
                         <p className='pt-2'>I am a computer science major with experience in machine learning, full stack development, database management, graphics, 
