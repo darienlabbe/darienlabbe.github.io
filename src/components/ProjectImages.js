@@ -6,9 +6,7 @@ import imageHashes from "./imageHashes.json";
 function ProjectImages({ src }) {
     const [imageLoaded, setImageLoaded] = useState(false);
     const [jsonData, setJSONData] = useState([]);
-    
-    // Use the json to set the value of the json object state
-    var name ='/';
+    var name = '';
 
     // Function that gets the correct blurhash based on an image source
     function setHash(src) {
@@ -20,6 +18,7 @@ function ProjectImages({ src }) {
         jsonData.map((data) => {
             // When the image is found, get the blurhash
             if(data.image === src) {
+                name = '/';
                 name = name + data.name;
                 hash = data.blurhash;
             }
