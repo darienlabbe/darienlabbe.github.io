@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { useNavigate } from "react-router-dom";
 import { LuMail, LuAtSign } from 'react-icons/lu';
 import { FaLocationDot } from "react-icons/fa6";
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
@@ -8,12 +7,9 @@ import ProjectImages from '../components/ProjectImages.js';
 import AboutImages from '../components/AboutImage.js';
 
 function Home() {
-    // Navigation to travel to the project pages
-    const navigate = useNavigate();
-
     // Ensure that when the page loads the top of the page is what is shown 
     useEffect(() => {
-        window.scroll(0, 0)
+        // window.scroll(0, 0)
     }, []);
 
     return (
@@ -46,16 +42,16 @@ function Home() {
                 </div>
                 <div className='flex flex-col justify-between items-center max-w-[1000px] m-auto'>
                     <div className='grid grid-cols-2 max-md:grid-cols-1 gap-5 px-16'>
-                        <button onClick={() => navigate("/Biosound")}><ProjectImages href='../pages/Biosound.js' src='biosound.png'/></button>
-                        <button onClick={() => navigate("/Autochickfeed")}><ProjectImages href='../pages/Autochickfeed.js' src='autochickfeed.png'/></button>
-                        <button onClick={() => navigate("/Server")}><ProjectImages href='../pages/Server.js' src='server.png'/></button>
-                        <button onClick={() => navigate("/Compvis")}><ProjectImages href='../pages/Compvis.js' src='computervision.jpg'/></button>
-                        <button onClick={() => navigate("/Graphics")}><ProjectImages href='../pages/Graphics.js' src='cube.jpg'/></button>
-                        <button onClick={() => navigate("/Spamorham")}><ProjectImages href='../pages/Spamorham.js' src='spamorham.jpg'/></button>
-                        <button onClick={() => navigate("/Wordleguesser")}><ProjectImages href='../pages/Wordleguesser.js' src='wordleguesser.jpg'/></button>
-                        <button onClick={() => navigate("/Socialmedia")}><ProjectImages href='../pages/Socialmedia.js' src='socialmedia.jpg'/></button>
-                        <button onClick={() => navigate("/Worm")}><ProjectImages href='../pages/Worm.js' src='wormtitle.jpg'/></button>
-                        <button onClick={() => navigate("/Website")}><ProjectImages href='../pages/Website.js' src='website.jpg'/></button>
+                        <ProjectImages href='../pages/Biosound.js' src='biosound.png'/>
+                        <ProjectImages href='../pages/Autochickfeed.js' src='autochickfeed.png'/>
+                        <ProjectImages href='../pages/Server.js' src='server.png'/>
+                        <ProjectImages href='../pages/Compvis.js' src='computervision.jpg'/>
+                        <ProjectImages href='../pages/Graphics.js' src='cube.jpg'/>
+                        <ProjectImages href='../pages/Spamorham.js' src='spamorham.jpg'/>
+                        <ProjectImages href='../pages/Wordleguesser.js' src='wordleguesser.jpg'/>
+                        <ProjectImages href='../pages/Socialmedia.js' src='socialmedia.jpg'/>
+                        <ProjectImages href='../pages/Worm.js' src='wormtitle.jpg'/>
+                        <ProjectImages href='../pages/Website.js' src='website.jpg'/>
                     </div>
                 </div>
             </section>
@@ -145,7 +141,7 @@ function Home() {
                 <div className='grid justify-center items-center pt-16'>
                     <h1 className='text-4xl p-2 font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>About</h1>
                 </div>
-                <div className='flex space-x-8 mx-96 max-xl:mx-20 max-md:mx-10 max-md:flex-col pt-10 items-center'>
+                <div className='flex flex-row space-x-8 mx-60 max-xl:mx-32 max-lg:mx-14 max-md:space-x-0 max-md:mx-20 max-md:flex-col max-sm:mx-12 pt-10 items-center'>
                     <AboutImages src='about.jpg'/>
                     <div className='grid grid-col-1'>
                         <h1 className='font-semibold text-lg max-md:pt-10'>Hi I'm Darien,</h1>

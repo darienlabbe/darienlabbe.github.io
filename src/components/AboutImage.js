@@ -16,7 +16,7 @@ function AboutImages({ src }) {
         // Find the right image in the json
         jsonData.map((data) => {
             // When the image is found, get the blurhash
-            if(data.name === src) hash = data.blurhash;
+            if(data.image === src) hash = data.blurhash;
             return null;
         })
         
@@ -45,7 +45,6 @@ function AboutImages({ src }) {
                     resolutionY={32}
                     punch={1} 
                     className='grid max-w-60 rounded-lg border-border-gray border-2 drop-shadow-lg'
-                    loading='lazy'
                 />
             </div>
             <div className={!imageLoaded?'hidden':'inline'}>
