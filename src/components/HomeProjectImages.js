@@ -1,26 +1,33 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Blurhash } from 'react-blurhash';
 import imageHashes from './imageHashes.json';
 
-function AboutImages({ src }) {
+function HomeProjectImages({ src }) {
     const [imageLoaded, setImageLoaded] = useState(false);
     const [jsonData, setJSONData] = useState([]);
-    
+    var linkName = '';  // Initialize the link to be grabbed from the json file
+
     // Function that gets the correct blurhash based on an image source
     function setHash(src) {
         // Hash with default garbage data
         let hash = '12345678';
         
+        
         // Find the right image in the json
         jsonData.map((data) => {
             // When the image is found, get the blurhash
-            if(data.image === src) hash = data.blurhash;
+            if(data.image === src) {
+                linkName = '/';
+                linkName = linkName + data.name;
+                hash = data.blurhash;
+            }
             return null;
         })
         
         return hash;
     }
-    
+
     useEffect(() => {
         setJSONData(imageHashes.images);
         
@@ -31,10 +38,10 @@ function AboutImages({ src }) {
         img.src = src;
 
     }, [src])
-
+    
     return (
         <>
-            <div className={imageLoaded?'hidden':'grid min-w-[240px] h-[318px] ml-8'}>
+            <div className={imageLoaded?'hidden':'flex w-[425px] h-[280px] m-auto max-lg:w-[300px] max-lg:h-[200px] max-md:w-[530px] max-md:h-[340px] max-sm:w-[260px] max-sm:h-[180px]'}>
                 <Blurhash
                     hash={setHash(src)}
                     width='100%'
@@ -42,19 +49,21 @@ function AboutImages({ src }) {
                     resolutionX={32}
                     resolutionY={32}
                     punch={1} 
-                    className='grid border-border-gray border-2 drop-shadow-lg'
+                    className='bg-border-gray border-border-gray border-2 drop-shadow-lg'
                 />
             </div>
             <div className={!imageLoaded?'hidden':'inline'}>
-                <img 
-                    src={src} 
-                    className='grid max-w-60 rounded-lg border-border-gray border-2 drop-shadow-lg' 
-                    loading='lazy'
-                    alt=''>
-                </img>
+                <Link to={linkName}>
+                    <img 
+                        src={src} 
+                        className='hover:scale-105 duration-200 cursor-pointer border-border-gray border-2 drop-shadow-lg rounded-lg' 
+                        loading='lazy'
+                        alt={src}>
+                    </img>
+                </Link>
             </div>
         </>
     )
 }
 
-export default AboutImages;
+export default HomeProjectImages;

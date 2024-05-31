@@ -24,7 +24,7 @@ function App() {
     // Apply the theme from localStorage, use the preferred theme, or default to light theme
     if (selectedTheme) {
       document.body.classList.add(selectedTheme);
-    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       document.body.classList.add('dark');
       localStorage.setItem('theme', 'dark');
     } else {

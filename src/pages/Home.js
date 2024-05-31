@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import { LuMail, LuAtSign } from 'react-icons/lu';
-import { FaLocationDot } from "react-icons/fa6";
+import { FaLocationDot } from 'react-icons/fa6';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import NavBar from '../components/NavBar';
-import ProjectImages from '../components/ProjectImages.js';
+import HomeProjectImages from '../components/HomeProjectImages.js';
 import AboutImages from '../components/AboutImage.js';
 
 function Home() {
     // Ensure that when the page loads the top of the page is what is shown 
     useEffect(() => {
-        // window.scroll(0, 0)
+        window.scroll(0, 0)
     }, []);
 
     return (
@@ -22,12 +22,12 @@ function Home() {
                         <h2 className='text-4xl max-md:text-2xl m-auto mt-5 max-md:mt-1 font-semibold'>Computer Science</h2>
                         <h2 className='text-3xl max-md:text-xl m-auto mt-5 max-md:mt-1 font-semibold text-t-main/70'>Aspiring Software Engineer</h2>
                         <div className='flex text-t-dark mt-10 max-md:mt-3'>
-                            <a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/darienlabbe/' className='cursor-pointer text-4xl max-md:text-2xl mr-20 max-md:mr-10 duration-200 hover:text-linkedin-hover hover:scale-110'><AiFillLinkedin/></a>
-                            <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe' className='cursor-pointer text-4xl max-md:text-2xl mr-20 max-md:mr-10 duration-200 hover:text-github-hover hover:scale-110'><AiFillGithub/></a>
+                            <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/darienlabbe/' className='cursor-pointer text-4xl max-md:text-2xl mr-20 max-md:mr-10 duration-200 hover:text-linkedin-hover hover:scale-110'><AiFillLinkedin/></a>
+                            <a target='_blank' rel='noreferrer' href='https://github.com/darienlabbe' className='cursor-pointer text-4xl max-md:text-2xl mr-20 max-md:mr-10 duration-200 hover:text-github-hover hover:scale-110'><AiFillGithub/></a>
                             <a href='mailto:darienlabbe@gmail.com' className='cursor-pointer text-4xl max-md:text-2xl mr-20 max-md:mr-10 hover:text-highlight duration-200 hover:scale-110'><LuMail/></a>
                         </div>
                         <div className='flex pt-10'>
-                            <a target='_blank' rel="noreferrer" href='Darien-Labbe-Resume.pdf' className='bg-gradient-to-r from-primary to-secondary text-white/70 rounded-md p-3 text-lg font-semibold duration-200 hover:text-white hover:scale-110'>Download CV</a>
+                            <a target='_blank' rel='noreferrer' href='Darien-Labbe-Resume.pdf' className='bg-gradient-to-r from-primary to-secondary text-white/70 rounded-md p-3 text-lg font-semibold duration-200 hover:text-white hover:scale-110'>Download CV</a>
                         </div>
                     </div>
                 </div>
@@ -42,16 +42,16 @@ function Home() {
                 </div>
                 <div className='flex flex-col justify-between items-center max-w-[1000px] m-auto'>
                     <div className='grid grid-cols-2 max-md:grid-cols-1 gap-5 px-16'>
-                        <ProjectImages href='../pages/Biosound.js' src='biosound.png'/>
-                        <ProjectImages href='../pages/Autochickfeed.js' src='autochickfeed.png'/>
-                        <ProjectImages href='../pages/Server.js' src='server.png'/>
-                        <ProjectImages href='../pages/Compvis.js' src='computervision.jpg'/>
-                        <ProjectImages href='../pages/Graphics.js' src='cube.jpg'/>
-                        <ProjectImages href='../pages/Spamorham.js' src='spamorham.jpg'/>
-                        <ProjectImages href='../pages/Wordleguesser.js' src='wordleguesser.jpg'/>
-                        <ProjectImages href='../pages/Socialmedia.js' src='socialmedia.jpg'/>
-                        <ProjectImages href='../pages/Worm.js' src='wormtitle.jpg'/>
-                        <ProjectImages href='../pages/Website.js' src='website.jpg'/>
+                        <HomeProjectImages href='../pages/Biosound.js' src='biosound.png'/>
+                        <HomeProjectImages href='../pages/Autochickfeed.js' src='autochickfeed.png'/>
+                        <HomeProjectImages href='../pages/Server.js' src='server.png'/>
+                        <HomeProjectImages href='../pages/Compvis.js' src='computervision.jpg'/>
+                        <HomeProjectImages href='../pages/Graphics.js' src='cube.jpg'/>
+                        <HomeProjectImages href='../pages/Spamorham.js' src='spamorham.jpg'/>
+                        <HomeProjectImages href='../pages/Wordleguesser.js' src='wordleguesser.jpg'/>
+                        <HomeProjectImages href='../pages/Socialmedia.js' src='socialmedia.jpg'/>
+                        <HomeProjectImages href='../pages/Worm.js' src='wormtitle.jpg'/>
+                        <HomeProjectImages href='../pages/Website.js' src='website.jpg'/>
                     </div>
                 </div>
             </section>
@@ -169,8 +169,8 @@ function Home() {
                         </div>
                     </div>
                     <div className='flex text-t-dark'>
-                        <a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/darienlabbe/' className='cursor-pointer text-4xl mx-10 max-md:text-2xl duration-200 hover:text-linkedin-hover hover:scale-110'><AiFillLinkedin/></a>
-                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe' className='cursor-pointer text-4xl mx-10 max-md:text-2xl duration-200 hover:text-github-hover hover:scale-110'><AiFillGithub/></a>
+                        <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/darienlabbe/' className='cursor-pointer text-4xl mx-10 max-md:text-2xl duration-200 hover:text-linkedin-hover hover:scale-110'><AiFillLinkedin/></a>
+                        <a target='_blank' rel='noreferrer' href='https://github.com/darienlabbe' className='cursor-pointer text-4xl mx-10 max-md:text-2xl duration-200 hover:text-github-hover hover:scale-110'><AiFillGithub/></a>
                         <a href='mailto:darienlabbe@gmail.com' className='cursor-pointer text-4xl max-md:text-2xl mx-10 hover:text-highlight duration-200 hover:scale-110'><LuMail/></a>
                     </div>
                 </div>

@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
-import SmallNav from "../components/SmallNav";
-import LeftArrow from "../components/LeftArrow";
-import { Link } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import SmallNav from '../components/SmallNav.js';
+import LeftArrow from '../components/LeftArrow.js';
+import ProjectImages from '../components/ProjectImages.js';
 
 function Website() {
     // Ensure that when the page loads the top of the page is what is shown
@@ -18,7 +19,7 @@ function Website() {
                 </div>
                 <div className='flex flex-col justify-between items-center max-w-[1300px] m-auto pb-20'> 
                     <div className='grid grid-cols-2 max-md:grid-cols-1 gap-8 px-16 items-center'>
-                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/darienlabbe.github.io'><img src='website.jpg' className='hover:scale-105 cursor-pointer border-border-gray border-2 drop-shadow-lg duration-200 rounded-lg max-w-96 max-lg:w-80 max-sm:w-60 m-auto' alt='website'/></a>
+                        <a target='_blank' rel='noreferrer' href='https://github.com/darienlabbe/darienlabbe.github.io'><ProjectImages src='website.jpg'/></a>
                         <div>
                             <h1 className='text-xl max-md:text-lg font-bold pb-2'>Project: React Portfolio Website</h1>
                             <div className='text-base max-md:text-sm'>
@@ -33,10 +34,10 @@ function Website() {
                 </div>
             </div>
             <div className='max-2xl:h-40'>
-                <div className="fixed bottom-[50%] left-10 flex justify-between items-center p-4 max-2xl:hidden">
+                <div className='fixed bottom-[50%] left-10 flex justify-between items-center p-4 max-2xl:hidden'>
                     <Link to='/Worm'><LeftArrow/></Link>
                 </div>
-                <div className="hidden justify-center items-center p-4 space-x-10 max-2xl:flex">
+                <div className='hidden justify-center items-center p-4 space-x-10 max-2xl:flex'>
                     <Link to='/Worm'><LeftArrow/></Link>
                 </div>
             </div>

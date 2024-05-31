@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import { LuMoonStar } from 'react-icons/lu';
-import { FiSun } from "react-icons/fi";
+import { FiSun } from 'react-icons/fi';
 import { PiBracketsCurlyBold } from 'react-icons/pi';
-import { IoReorderThreeOutline } from "react-icons/io5";
+import { IoReorderThreeOutline } from 'react-icons/io5';
 
 function NavBar() {
     // States for the use of the nav elements and tracking the theme

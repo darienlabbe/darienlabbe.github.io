@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import SmallNav from '../components/SmallNav.js';
-import LeftArrow from "../components/LeftArrow.js";
-import RightArrow from "../components/RightArrow.js";
+import LeftArrow from '../components/LeftArrow.js';
+import RightArrow from '../components/RightArrow.js';
+import ProjectImages from '../components/ProjectImages.js';
 
 function AutoChickFeed() {
     // Ensure that when the page loads the top of the page is what is shown
@@ -13,13 +14,19 @@ function AutoChickFeed() {
     return (
         <div>
             <SmallNav/>
+            <div className='pt-5'>
+                <div className='hidden justify-center items-center p-4 space-x-10 max-2xl:flex'>
+                    <Link to='/Biosound'><LeftArrow/></Link>
+                    <Link to='/Server'><RightArrow/></Link>
+                </div>
+            </div>
             <div className='drop-shadow-md'>
-                <div className='flex flex-col justify-center items-center py-7 pt-16'>
+                <div className='flex flex-col justify-center items-center py-7 pt-10 max-2xl:pt-5'>
                     <h1 className='text-4xl p-2 max-md:text-2xl max-sm:text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>The Automatic Chicken Feeder</h1>
                 </div>
                 <div className='flex flex-col justify-between items-center max-w-[1300px] m-auto pb-20'> 
                     <div className='grid grid-cols-2 max-md:grid-cols-1 gap-8 px-16 items-center'>
-                        <a target='_blank' rel="noreferrer" href='https://github.com/darienlabbe/Chicken-Feeder-Senior-Project'><img src='autochickfeed.png' className='hover:scale-105 cursor-pointer border-border-gray border-2 drop-shadow-lg duration-200 rounded-lg max-w-96 max-lg:w-80 max-sm:w-60 m-auto' alt='automatic chicken feeder'/></a>
+                        <a target='_blank' rel='noreferrer' href='https://github.com/darienlabbe/Chicken-Feeder-Senior-Project'><ProjectImages src='autochickfeed.png'/></a>
                         <div>
                             <h1 className='text-xl max-md:text-lg font-bold pb-2'>Project: The Automatic Chicken Feeder</h1>
                             <div className='text-base max-md:text-sm'>
@@ -29,7 +36,7 @@ function AutoChickFeed() {
                                     how WebSockets work, full stack development, how to use the React framework, and so much more.</p><br/>
                                 <p>I created a video presentation where I go over my project, demonstrating how I eventually arrived at my solution, how I constructed my solution, 
                                     and my final product in action. If you wish to view this video and learn more about my project I uploaded my presentation to YouTube and you can 
-                                    watch it <a target='_blank' rel="noreferrer" href='https://youtu.be/hTrQwCQ2fgw' className='text-t-link font-bold'>here</a>.</p><br/>
+                                    watch it <a target='_blank' rel='noreferrer' href='https://youtu.be/hTrQwCQ2fgw' className='text-t-link font-bold'>here</a>.</p><br/>
                                 <p>If you wish to take a look at the code behind this project, click the photo to be taken to the GitHub repository containing that code.</p>
                             </div>
                         </div>
@@ -94,7 +101,7 @@ function AutoChickFeed() {
                                 with something like a Raspberry Pi 4B, Zero, or Pico. More research is still needed to narrow down the right one for this project. I was also able to create 
                                 a circuit diagram shown below with everything except the pi included. An overview project diagram is still needed and I need the circuit verified to ensure 
                                 that the numbers provided are accurate/reasonable for this application.</li>
-                            <li className='list-none py-5'><a target='_blank' href='/public/projectdiagram.png'><img src='projectdiagram.png' className='border-border-gray border-2 drop-shadow-lg rounded-md m-auto' alt='project diagram'/></a></li>
+                            <li className='list-none py-5'><a target='_blank' href='https://github.com/darienlabbe/Chicken-Feeder-Senior-Project/blob/main/Project%20Diagram.png'><img src='projectdiagram.png' className='hover:scale-105 duration-200 border-border-gray border-2 drop-shadow-lg rounded-md m-auto' loading='eager' alt='project diagram'/></a></li>
                             <li><p className='text-primary text-lg max-md:text-base font-bold'>03/13/2024:</p> Today I finished creating my project's overview diagram to illustrate how everything 
                                 works together. The image is provided above. I needed to nail down a few specifics about my project and what end game hardware I will be using in order to know how 
                                 they will be interconnected to each other. So I did some research and came up with some solutions.
@@ -103,7 +110,7 @@ function AutoChickFeed() {
                                         connection and second, because of the 5th generation being out I was able to get it for a lower price than I expected. It ended up being about the same price 
                                         as what the Pi 3, 2, and Zero models right now (~$35).</li>
                                     <li>For relays, I found a much better solution to what we currently have switching the motor on and off and I am confident that this will be able to last much 
-                                        longer too. I found a Controllable Four Outlet Power Relay which you can look at <a target='_blank' rel="noreferrer" href='https://www.adafruit.com/product/2935?gad_source=1&gclid=Cj0KCQjwncWvBhD_ARIsAEb2HW_Ajt2huRk3PewMjwra-UPBQW-iZ56xynBo9Cr8_z00Z8OcHv9EUFsaAo4hEALw_wcB' className='text-t-link font-bold'>here </a> 
+                                        longer too. I found a Controllable Four Outlet Power Relay which you can look at <a target='_blank' rel='noreferrer' href='https://www.adafruit.com/product/2935?gad_source=1&gclid=Cj0KCQjwncWvBhD_ARIsAEb2HW_Ajt2huRk3PewMjwra-UPBQW-iZ56xynBo9Cr8_z00Z8OcHv9EUFsaAo4hEALw_wcB' className='text-t-link font-bold'>here </a> 
                                         which is essentially a relay built to handle 120V AC and can be controlled by a Pi or Arduino to switch the two normally off outlets to on and the one normally 
                                         on outlet to off. There is a fourth outlet provided that is always on which can be used to power the Pi without the need to run multiple connections for the Pi 
                                         and for the motor. I already ordered these two things and they should be arriving on march 20th.</li>
@@ -229,13 +236,13 @@ function AutoChickFeed() {
                 </div>
             </div>
             <div className='max-2xl:h-40'>
-                <div className="fixed bottom-[50%] left-10 flex justify-between items-center p-4 max-2xl:hidden">
+                <div className='fixed bottom-[50%] left-10 flex justify-between items-center p-4 max-2xl:hidden'>
                     <Link to='/Biosound'><LeftArrow/></Link>
                 </div>
-                <div className="fixed bottom-[50%] right-10 flex justify-between items-center p-4 max-2xl:hidden">
+                <div className='fixed bottom-[50%] right-10 flex justify-between items-center p-4 max-2xl:hidden'>
                     <Link to='/Server'><RightArrow/></Link>
                 </div>
-                <div className="hidden justify-center items-center p-4 space-x-10 max-2xl:flex">
+                <div className='hidden justify-center items-center p-4 space-x-10 max-2xl:flex'>
                     <Link to='/Biosound'><LeftArrow/></Link>
                     <Link to='/Server'><RightArrow/></Link>
                 </div>

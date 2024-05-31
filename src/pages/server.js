@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
-import SmallNav from "../components/SmallNav";
-import LeftArrow from "../components/LeftArrow";
-import RightArrow from "../components/RightArrow";
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import SmallNav from '../components/SmallNav.js';
+import LeftArrow from '../components/LeftArrow.js';
+import RightArrow from '../components/RightArrow.js';
+import ProjectImages from '../components/ProjectImages.js';
 
 function Server() {
     // Ensure that when the page loads the top of the page is what is shown
@@ -19,7 +20,7 @@ function Server() {
                 </div>
                 <div className='flex flex-col justify-between items-center max-w-[1300px] m-auto pb-20'> 
                     <div className='grid grid-cols-2 max-md:grid-cols-1 gap-8 px-16 items-center'>
-                        <img src='server.png' className='border-border-gray border-2 drop-shadow-lg rounded-lg max-w-96 max-lg:w-80 max-sm:w-60 m-auto' alt='home nas server'/>
+                        <ProjectImages src='server.png'/>
                         <div>
                             <h1 className='text-xl max-md:text-lg font-bold pb-2'>Project: Home NAS Server</h1>
                             <div className='text-base max-md:text-sm'>
@@ -45,13 +46,13 @@ function Server() {
                 </div>
             </div>
             <div className='max-2xl:h-40'>
-                <div className="fixed bottom-[50%] left-10 flex justify-between items-center p-4 max-2xl:hidden">
+                <div className='fixed bottom-[50%] left-10 flex justify-between items-center p-4 max-2xl:hidden'>
                     <Link to='/AutoChickFeed'><LeftArrow/></Link>
                 </div>
-                <div className="fixed bottom-[50%] right-10 flex justify-between items-center p-4 max-2xl:hidden">
+                <div className='fixed bottom-[50%] right-10 flex justify-between items-center p-4 max-2xl:hidden'>
                     <Link to='/CompVis'><RightArrow/></Link>
                 </div>
-                <div className="hidden justify-center items-center p-4 space-x-10 max-2xl:flex">
+                <div className='hidden justify-center items-center p-4 space-x-10 max-2xl:flex'>
                     <Link to='/AutoChickFeed'><LeftArrow/></Link>
                     <Link to='/CompVis'><RightArrow/></Link>
                 </div>

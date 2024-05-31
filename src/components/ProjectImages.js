@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { Blurhash } from "react-blurhash";
-import imageHashes from "./imageHashes.json";
+import React, { useEffect, useState } from 'react';
+import { Blurhash } from 'react-blurhash';
+import imageHashes from './imageHashes.json';
 
 function ProjectImages({ src }) {
     const [imageLoaded, setImageLoaded] = useState(false);
     const [jsonData, setJSONData] = useState([]);
-    var name = '';
 
     // Function that gets the correct blurhash based on an image source
     function setHash(src) {
@@ -17,18 +15,12 @@ function ProjectImages({ src }) {
         // Find the right image in the json
         jsonData.map((data) => {
             // When the image is found, get the blurhash
-            if(data.image === src) {
-                name = '/';
-                name = name + data.name;
-                hash = data.blurhash;
-            }
+            if(data.image === src) hash = data.blurhash;
             return null;
         })
         
         return hash;
     }
-    console.log(setHash(src));
-    console.log(name);
 
     useEffect(() => {
         setJSONData(imageHashes.images);
@@ -43,7 +35,7 @@ function ProjectImages({ src }) {
     
     return (
         <>
-            <div className={imageLoaded?'hidden':'flex w-[425px] h-[280px] m-auto max-lg:w-[300px] max-lg:h-[200px] max-md:w-[530px] max-md:h-[340px] max-sm:w-[260px] max-sm:h-[180px]'}>
+            <div className={imageLoaded?'hidden':'flex w-[383px] h-[255px] m-auto max-lg:w-[320px] max-lg:h-[212px] max-md:w-[320px] max-md:h-[213px] max-sm:w-[240px] max-sm:h-[160px]'}>
                 <Blurhash
                     hash={setHash(src)}
                     width='100%'
@@ -55,12 +47,12 @@ function ProjectImages({ src }) {
                 />
             </div>
             <div className={!imageLoaded?'hidden':'inline'}>
-                <Link to={name}><img 
+                <img 
                     src={src} 
-                    className='hover:scale-105 duration-200 cursor-pointer border-border-gray border-2 drop-shadow-lg rounded-lg' 
+                    className='hover:scale-105 duration-200 cursor-pointer border-border-gray border-2 drop-shadow-lg rounded-lg max-w-96 max-lg:w-80 max-sm:w-60 m-auto' 
                     loading='lazy'
                     alt={src}>
-                </img></Link>
+                </img>
             </div>
         </>
     )
