@@ -11,11 +11,10 @@ function ProjectImages({ src }) {
         // Hash with default garbage data
         let hash = '12345678';
         
-        
         // Find the right image in the json
         jsonData.map((data) => {
             // When the image is found, get the blurhash
-            if(data.image === src) hash = data.blurhash;
+            if(data.src === src) hash = data.blurhash;
             return null;
         })
         
@@ -26,9 +25,7 @@ function ProjectImages({ src }) {
         setJSONData(imageHashes.images);
         
         const img = new Image()
-        img.onload = () => {
-            setImageLoaded(true);
-        }
+        img.onload = () => { setImageLoaded(true); }
         img.src = src;
 
     }, [src])
@@ -51,7 +48,7 @@ function ProjectImages({ src }) {
                     src={src} 
                     className='hover:scale-105 duration-200 cursor-pointer border-border-gray border-2 drop-shadow-lg rounded-lg max-w-96 max-lg:w-80 max-sm:w-60 m-auto' 
                     loading='lazy'
-                    alt={src}>
+                    alt={src.split('.')[0]}>
                 </img>
             </div>
         </>

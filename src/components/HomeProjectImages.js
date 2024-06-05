@@ -13,13 +13,11 @@ function HomeProjectImages({ src }) {
         // Hash with default garbage data
         let hash = '12345678';
         
-        
         // Find the right image in the json
         jsonData.map((data) => {
             // When the image is found, get the blurhash
-            if(data.image === src) {
-                linkName = '/';
-                linkName = linkName + data.name;
+            if(data.src === src) {
+                linkName = '/' + data.name;
                 hash = data.blurhash;
             }
             return null;
@@ -32,9 +30,7 @@ function HomeProjectImages({ src }) {
         setJSONData(imageHashes.images);
         
         const img = new Image()
-        img.onload = () => {
-            setImageLoaded(true);
-        }
+        img.onload = () => { setImageLoaded(true); }
         img.src = src;
 
     }, [src])
@@ -58,7 +54,7 @@ function HomeProjectImages({ src }) {
                         src={src} 
                         className='hover:scale-105 duration-200 cursor-pointer border-border-gray border-2 drop-shadow-lg rounded-lg' 
                         loading='lazy'
-                        alt={src}>
+                        alt={src.split('.')[0]}>
                     </img>
                 </Link>
             </div>

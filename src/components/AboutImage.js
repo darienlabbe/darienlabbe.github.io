@@ -14,7 +14,7 @@ function AboutImages({ src }) {
         // Find the right image in the json
         jsonData.map((data) => {
             // When the image is found, get the blurhash
-            if(data.image === src) hash = data.blurhash;
+            if(data.src === src) hash = data.blurhash;
             return null;
         })
         
@@ -25,9 +25,7 @@ function AboutImages({ src }) {
         setJSONData(imageHashes.images);
         
         const img = new Image()
-        img.onload = () => {
-            setImageLoaded(true);
-        }
+        img.onload = () => { setImageLoaded(true); }
         img.src = src;
 
     }, [src])
