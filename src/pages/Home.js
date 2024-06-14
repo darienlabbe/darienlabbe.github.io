@@ -31,7 +31,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-center m-auto items-center bg-gradient-to-b from-primary to-white rounded-full max-lg:scale-75 lg:mt-10 border-primary border-2 drop-shadow-lg'>
+                <div className='flex justify-center m-auto items-center bg-gradient-to-b from-primary max-w-[550px] max-md:max-w-[400px] max-sm:max-w-[325px] to-white rounded-full mt-12 border-primary border-2 drop-shadow-lg'>
                     <img src='perfil.png' className='relative rounded-full' alt='profile of me'/>
                 </div>
             </section>
