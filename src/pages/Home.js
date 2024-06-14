@@ -1,12 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { LuMail, LuAtSign } from 'react-icons/lu';
 import { FaLocationDot } from 'react-icons/fa6';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { Blurhash } from 'react-blurhash';
 import NavBar from '../components/NavBar';
 import HomeProjectImages from '../components/HomeProjectImages.js';
 import AboutImages from '../components/AboutImage.js';
 
 function Home() {
+    const [imageLoaded, setImageLoaded] = useState(false);
+    
     // Ensure that when the page loads the top of the page is what is shown 
     useEffect(() => {
         window.scroll(0, 0)
@@ -31,8 +34,21 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-center m-auto items-center bg-gradient-to-b from-primary max-w-[550px] max-md:max-w-[400px] max-sm:max-w-[325px] to-white rounded-full mt-12 border-primary border-2 drop-shadow-lg'>
-                    <img src='perfil.png' className='relative rounded-full' alt='profile of me'/>
+                <div>
+                    <div className={imageLoaded?'hidden':'flex justify-center mr-40 items-center w-[550px] h-[550px] bg-gradient-to-b from-primary max-xl:mr-10 max-lg:max-w-[340px] max-lg:max-h-[340px] max-md:mr-0 max-md:max-w-[400px] max-md:max-h-[400px] max-sm:max-w-[325px] max-sm:max-h-[325px] to-white rounded-full mt-12 border-primary border-2 drop-shadow-lg'}>
+                        <Blurhash
+                            hash = 'KnQ0Bes:_N-=tSkWROV@fk'
+                            width='60%'
+                            height='80%'
+                            resolutionX={32}
+                            resolutionY={32}
+                            punch={1}
+                            className='relative'
+                        />
+                    </div>
+                    <div className={!imageLoaded?'hidden':'flex justify-center mr-40 items-center bg-gradient-to-b from-primary max-w-[550px] max-xl:mr-10 max-md:max-w-[400px] max-md:mr-0 max-sm:max-w-[325px] to-white rounded-full mt-12 border-primary border-2 drop-shadow-lg'}>
+                        <img src='perfil.png' className='relative rounded-full' onLoad={() => setImageLoaded(true)} alt='profile of me'/>
+                    </div>
                 </div>
             </section>
             <section id='Projects' className='py-10 drop-shadow-md'>
