@@ -161,12 +161,12 @@ function Home() {
                     <AboutImages src='about.jpg'/>
                     <div className='grid grid-col-1'>
                         <h1 className='font-semibold text-lg max-md:pt-10'>Hi I'm Darien,</h1>
-                        <p className='pt-2'>I am a graduate with a degree in computer science major with experience in machine learning, full stack development, database  
-                            management, graphics, and more. I currently work as a machine learning research and developer for the BioSoundSCape Project which you can learn 
-                            more about above. While I am currently in the machine learning and AI industry, I am still very fascinated by the rest of the computer science  
-                            field and I would love to dive into almost any opportunity I can get. I have experience working in a team environment, leadership, and coaching 
-                            roles. I am a hard worker, I take pride in everything I do, and I am always looking to learn more. As I now begin my career in tech, I am excited 
-                            and cannot wait to see what I might have the ability and opportunity to create.</p>
+                        <p className='pt-2'>I am a graduate with a degree in computer science with experience in machine learning, full stack development, database management
+                            graphics, and more. I currently work as a machine learning research and developer for the BioSoundSCape Project which you can learn more about
+                            above. While I am currently in the machine learning and AI industry, I am still very fascinated by the rest of the computer science field and I
+                            would love to dive into almost any opportunity I can get. I have experience working in a team environment, leadership, and coaching  roles. I am
+                            a hard worker, I take pride in everything I do, and I am always looking to learn more. As I now begin my career in tech, I am excited and cannot
+                            wait to see what I might have the ability and opportunity to create.</p>
                     </div>
                 </div>
             </section>
@@ -193,7 +193,7 @@ function Home() {
             </section>
             <section id='Footer' className='w-full mt-24 text-white bg-footer-color h-60 content-center'>
                 <h1 className='flex justify-center items-center text-4xl py-4 font-bold'>Darien Labbe</h1>
-                <p className='flex justify-center items-center text-xl py-4 text-center max-md:text-sm'>Created by Darien Labbe - Updated 06/05/2024</p>
+                <p className='flex justify-center items-center text-xl py-4 text-center max-md:text-sm'>Created by Darien Labbe - Updated 06/14/2024</p>
             </section>
         </div>
     );
