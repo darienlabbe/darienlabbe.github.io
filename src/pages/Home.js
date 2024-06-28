@@ -161,7 +161,7 @@ function Home() {
                     <AboutImages src='about.jpg'/>
                     <div className='grid grid-col-1'>
                         <h1 className='font-semibold text-lg max-md:pt-10'>Hi I'm Darien,</h1>
-                        <p className='pt-2'>I am a graduate with a degree in computer science with experience in machine learning, full stack development, database management
+                        <p className='pt-2'>I am a graduate with a degree in computer science with experience in machine learning, full stack development, database management,
                             graphics, and more. I currently work as a machine learning research and developer for the BioSoundSCape Project which you can learn more about
                             above. While I am currently in the machine learning and AI industry, I am still very fascinated by the rest of the computer science field and I
                             would love to dive into almost any opportunity I can get. I have experience working in a team environment, leadership, and coaching  roles. I am
